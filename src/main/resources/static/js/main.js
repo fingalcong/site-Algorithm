@@ -40,7 +40,7 @@ function submitStat(){
             alert(amount + security_code + type_choice + subtype_choice);
             //true_or_false = 0;
         }
-    
+
     /*const amount = document.getElementById("Amount_for_betting").value;
     const security_code = document.getElementById("Security_for_betting").value;
     */
@@ -61,7 +61,6 @@ function submitStat_Villa(){
             const home_team = document.getElementById("Villa").innerText;
             const away_team = document.getElementById("Brighton").innerText;
             const amount = document.getElementById("Amount_for_betting_Villa").value;
-            const security_code = document.getElementById("Security_for_betting_Villa").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -97,7 +96,6 @@ function submitbig_Villa(){chooseSmall()
             const home_team = document.getElementById("Villa").innerText;
             const away_team = document.getElementById("Brighton").innerText;
             const amount = document.getElementById("Amount_for_big_Villa").value;
-            const security_code = document.getElementById("Security_for_big_Villa").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -133,7 +131,6 @@ function submitCorner_Villa(){
             const home_team = document.getElementById("Villa").innerText;
             const away_team = document.getElementById("Brighton").innerText;
             const amount = document.getElementById("Amount_for_Corner_Villa").value;
-            const security_code = document.getElementById("Security_for_Corner_Villa").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -169,7 +166,6 @@ function submitCard_Villa(){
             const home_team = document.getElementById("Villa").innerText;
             const away_team = document.getElementById("Brighton").innerText;
             const amount = document.getElementById("Amount_for_Card_Villa").value;
-            const security_code = document.getElementById("Security_for_Card_Villa").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -205,7 +201,6 @@ function submitStat_Everton(){
             const home_team = document.getElementById("Everton").innerText;
             const away_team = document.getElementById("Bournemouth").innerText;
             const amount = document.getElementById("Amount_for_betting_Everton").value;
-            const security_code = document.getElementById("Security_for_betting_Everton").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -241,7 +236,6 @@ function submitbig_Everton(){
             const home_team = document.getElementById("Everton").innerText;
             const away_team = document.getElementById("Bournemouth").innerText;
             const amount = document.getElementById("Amount_for_big_Everton").value;
-            const security_code = document.getElementById("Security_for_big_Everton").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -277,7 +271,6 @@ function submitCorner_Everton(){
             const home_team = document.getElementById("Everton").innerText;
             const away_team = document.getElementById("Bournemouth").innerText;
             const amount = document.getElementById("Amount_for_Corner_Everton").value;
-            const security_code = document.getElementById("Security_for_Corner_Everton").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -313,7 +306,6 @@ function submitCard_Everton(){
             const home_team = document.getElementById("Everton").innerText;
             const away_team = document.getElementById("Bournemouth").innerText;
             const amount = document.getElementById("Amount_for_Card_Everton").value;
-            const security_code = document.getElementById("Security_for_Card_Everton").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -349,7 +341,6 @@ function submitStat_Leeds(){
             const home_team = document.getElementById("Leeds").innerText;
             const away_team = document.getElementById("Tottenham").innerText;
             const amount = document.getElementById("Amount_for_betting_Leeds").value;
-            const security_code = document.getElementById("Security_for_betting_Leeds").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -385,7 +376,6 @@ function submitbig_Leeds(){
             const home_team = document.getElementById("Leeds").innerText;
             const away_team = document.getElementById("Tottenham").innerText;
             const amount = document.getElementById("Amount_for_big_Leeds").value;
-            const security_code = document.getElementById("Security_for_big_Leeds").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -421,7 +411,6 @@ function submitCorner_Leeds(){
             const home_team = document.getElementById("Leeds").innerText;
             const away_team = document.getElementById("Tottenham").innerText;
             const amount = document.getElementById("Amount_for_Corner_Leeds").value;
-            const security_code = document.getElementById("Security_for_Corner_Leeds").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -457,7 +446,6 @@ function submitCard_Leeds(){
             const home_team = document.getElementById("Leeds").innerText;
             const away_team = document.getElementById("Tottenham").innerText;
             const amount = document.getElementById("Amount_for_Card_Leeds").value;
-            const security_code = document.getElementById("Security_for_Card_Leeds").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -493,7 +481,6 @@ function submitStat_United(){
             const home_team = document.getElementById("Man_United").innerText;
             const away_team = document.getElementById("Fulham").innerText;
             const amount = document.getElementById("Amount_for_betting_United").value;
-            const security_code = document.getElementById("Security_for_betting_United").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -529,7 +516,6 @@ function submitbig_United(){
             const home_team = document.getElementById("Man_United").innerText;
             const away_team = document.getElementById("Fulham").innerText;
             const amount = document.getElementById("Amount_for_big_United").value;
-            const security_code = document.getElementById("Security_for_big_United").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -565,7 +551,6 @@ function submitCorner_United(){
             const home_team = document.getElementById("Man_United").innerText;
             const away_team = document.getElementById("Fulham").innerText;
             const amount = document.getElementById("Amount_for_Corner_United").value;
-            const security_code = document.getElementById("Security_for_Corner_United").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -601,7 +586,6 @@ function submitCard_United(){
             const home_team = document.getElementById("Man_United").innerText;
             const away_team = document.getElementById("Fulham").innerText;
             const amount = document.getElementById("Amount_for_Card_United").value;
-            const security_code = document.getElementById("Security_for_Card_United").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -637,7 +621,6 @@ function submitStat_Chelsea(){
             const home_team = document.getElementById("Chelsea").innerText;
             const away_team = document.getElementById("away_newcastle").innerText;
             const amount = document.getElementById("Amount_for_betting_Chelsea").value;
-            const security_code = document.getElementById("Security_for_betting_Chelsea").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -673,7 +656,6 @@ function submitbig_Chelsea(){
             const home_team = document.getElementById("Chelsea").innerText;
             const away_team = document.getElementById("away_newcastle").innerText;
             const amount = document.getElementById("Amount_for_big_Chelsea").value;
-            const security_code = document.getElementById("Security_for_big_Chelsea").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -709,7 +691,6 @@ function submitCorner_Chelsea(){
             const home_team = document.getElementById("Chelsea").innerText;
             const away_team = document.getElementById("away_newcastle").innerText;
             const amount = document.getElementById("Amount_for_Corner_Chelsea").value;
-            const security_code = document.getElementById("Security_for_Corner_Chelsea").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -745,7 +726,6 @@ function submitCard_Chelsea(){
             const home_team = document.getElementById("Chelsea").innerText;
             const away_team = document.getElementById("away_newcastle").innerText;
             const amount = document.getElementById("Amount_for_Card_Chelsea").value;
-            const security_code = document.getElementById("Security_for_Card_Chelsea").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -781,7 +761,6 @@ function submitStat_Leicester(){
             const home_team = document.getElementById("Leicester").innerText;
             const away_team = document.getElementById("away_west").innerText;
             const amount = document.getElementById("Amount_for_betting_Leicester").value;
-            const security_code = document.getElementById("Security_for_betting_Leicester").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -817,7 +796,6 @@ function submitbig_Leicester(){
             const home_team = document.getElementById("Leicester").innerText;
             const away_team = document.getElementById("away_west").innerText;
             const amount = document.getElementById("Amount_for_big_Leicester").value;
-            const security_code = document.getElementById("Security_for_big_Leicester").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -853,7 +831,6 @@ function submitCorner_Leicester(){
             const home_team = document.getElementById("Leicester").innerText;
             const away_team = document.getElementById("away_west").innerText;
             const amount = document.getElementById("Amount_for_Corner_Leicester").value;
-            const security_code = document.getElementById("Security_for_Corner_Leicester").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -889,7 +866,6 @@ function submitCard_Leicester(){
             const home_team = document.getElementById("Leicester").innerText;
             const away_team = document.getElementById("away_west").innerText;
             const amount = document.getElementById("Amount_for_Card_Leicester").value;
-            const security_code = document.getElementById("Security_for_Card_Leicester").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -925,7 +901,6 @@ function submitStat_Arsenal(){
             const home_team = document.getElementById("home_Arsenal").innerText;
             const away_team = document.getElementById("away_wovles").innerText;
             const amount = document.getElementById("Amount_for_betting_Arsenal").value;
-            const security_code = document.getElementById("Security_for_betting_Arsenal").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -961,7 +936,6 @@ function submitbig_Arsenal(){
             const home_team = document.getElementById("home_Arsenal").innerText;
             const away_team = document.getElementById("away_wovles").innerText;
             const amount = document.getElementById("Amount_for_big_Arsenal").value;
-            const security_code = document.getElementById("Security_for_big_Arsenal").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -997,7 +971,6 @@ function submitCorner_Arsenal(){
             const home_team = document.getElementById("home_Arsenal").innerText;
             const away_team = document.getElementById("away_wovles").innerText;
             const amount = document.getElementById("Amount_for_Corner_Arsenal").value;
-            const security_code = document.getElementById("Security_for_Corner_Arsenal").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -1033,7 +1006,6 @@ function submitCard_Arsenal(){
             const home_team = document.getElementById("home_Arsenal").innerText;
             const away_team = document.getElementById("away_wovles").innerText;
             const amount = document.getElementById("Amount_for_Card_Arsenal").value;
-            const security_code = document.getElementById("Security_for_Card_Arsenal").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -1070,7 +1042,6 @@ function submitStat_Southampton(){
             const home_team = document.getElementById("Southampton").innerText;
             const away_team = document.getElementById("away_liverpool").innerText;
             const amount = document.getElementById("Amount_for_betting_Southampton").value;
-            const security_code = document.getElementById("Security_for_betting_Southampton").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -1106,7 +1077,6 @@ function submitbig_Southampton(){
             const home_team = document.getElementById("Southampton").innerText;
             const away_team = document.getElementById("away_liverpool").innerText;
             const amount = document.getElementById("Amount_for_big_Southampton").value;
-            const security_code = document.getElementById("Security_for_big_Southampton").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -1142,7 +1112,6 @@ function submitCorner_Southampton(){
             const home_team = document.getElementById("Southampton").innerText;
             const away_team = document.getElementById("away_liverpool").innerText;
             const amount = document.getElementById("Amount_for_Corner_Southampton").value;
-            const security_code = document.getElementById("Security_for_Corner_Southampton").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -1178,7 +1147,6 @@ function submitCard_Southampton(){
             const home_team = document.getElementById("Southampton").innerText;
             const away_team = document.getElementById("away_liverpool").innerText;
             const amount = document.getElementById("Amount_for_Card_Southampton").value;
-            const security_code = document.getElementById("Security_for_Card_Southampton").value;
 
             var url = "http://localhost:8080/api/v1/order/newOrder";
             var xhr = XMLHttpRequestWithJWT("POST", url, true);
@@ -1302,10 +1270,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     loginForm.addEventListener("submit", e => {
         e.preventDefault();
-
-        // Perform your AJAX/Fetch login
-
-        setFormMessage(loginForm, "error", "Invalid username/password combination");
+        /*const token = document.cookie.match(/jwt=(.+)/);
+        if(token[1] != null){
+            //alert(token[1]);
+            document.cookie = "authorization=success";
+        }
+        else{
+            setFormMessage(loginForm, "error", "Invalid username/password combination");
+        }*/
     });
 
     document.querySelectorAll(".form__input").forEach(inputElement => {
@@ -1330,6 +1302,17 @@ function login(){
     xhr.onreadystatechange = function() {
         if (xhr.readyState == XMLHttpRequest.DONE) {
             //alert(xhr.status)//200, 403
+            if(xhr.status == 200){
+                document.cookie = "authorization=success";
+                const loginForm = document.querySelector("#login");
+                setFormMessage(loginForm, "success", "Login Succeed, the page will be jumped to home page in 3 seconds");
+                //window.location.href = "index.html";
+                tiaotrigger();
+            }
+            else{
+                const loginForm = document.querySelector("#login");
+                setFormMessage(loginForm, "error", "Invalid username/password combination");
+            }
             jwtToken = JSON.parse(xhr.response).token;
             document.cookie = "jwt="+jwtToken;
         }
@@ -1344,41 +1327,6 @@ function login(){
     };
 
     xhr.send(JSON.stringify(data));
-
-    //s_or_fail = "success"; //we will collect this data from back-end later
-    document.cookie = "authorization=success";
-    if(document.cookie.indexOf('authorization=') == -1){
-        alert('failure of login, please make sure you type in the correct username and pwd');
-    }
-    else{
-        var tbody = document.querySelector('#data_purchase_history');
-        var tr = document.createElement('tr');
-        var td0 = document.createElement('td');
-        var td1 = document.createElement('td');
-        var td2 = document.createElement('td');
-        var td3 = document.createElement('td');
-        var td4 = document.createElement('td');
-        var td5 = document.createElement('td');
-        var td6 = document.createElement('td');
-
-        td0.innerHTML = '1'; //change this num to a count when utilizing later
-        td1.innerHTML = 'Arsenal';
-        td2.innerHTML = 'Liverpool';
-        td3.innerHTML = 'Big or Small';
-        td4.innerHTML = 'Big';
-        td5.innerHTML = '50000';
-        td6.innerHTML = 'UCI MCS';
-
-        tr.append(td0);
-        tr.append(td1);
-        tr.append(td2);
-        tr.append(td3);
-        tr.append(td4);
-        tr.append(td5);
-        tr.append(td6);
-        tbody.append(tr);
-        //s_or_fail = 'success';
-    }
 }
 
 /*document.getElementById("purchase_history").onclick = function () {
@@ -1457,3 +1405,14 @@ function signup(){
         alert(username + email + pwd);
     }*/
 }
+//var mytime = setInterval("changeSec()",1000);
+function tiao() {
+    //clearInterval(mytime);
+    window.location.href = "index.html";
+}
+
+var myVar;
+function tiaotrigger() {
+    myVar = setTimeout(tiao, 3000);
+}
+//setTimeout("tiao()",5000);
