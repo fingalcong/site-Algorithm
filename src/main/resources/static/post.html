@@ -42,7 +42,7 @@
 								class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="post.html"><i class="fas fa-file-alt fa-fw mr-2"></i>Betting games</a>
+					    <a class="nav-link" href="post.html" onclick="return winorloss()"><i class="fas fa-file-alt fa-fw mr-2"></i>Betting games</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="bigsmall.html"><i class="fas fa-file-alt fa-fw mr-2"></i>Betting Big Small</a>
@@ -112,9 +112,9 @@
 						<p id="away_team">Arsenal</p>
 					</div>
 					<div>
-						<button id="win_button" onclick="chooseWin()">Win</button>
-						<button id="draw_button" onclick="chooseDraw()">Draw</button>
-						<button id="loss_button" onclick="chooseLoss()">Loss</button>
+						<button id="win_button1" onclick="chooseWin()">Home Win</button>
+						<button id="draw_button1" onclick="chooseDraw()">Draw</button>
+						<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
 					</div>
 					<div id="betting_amount">
 						<form action="" method="post">
@@ -137,9 +137,14 @@
 						<p id="Brighton">Brighton</p>
 					</div>
 					<div>
-						<button id="win_button" onclick="chooseWin()">Win</button>
-						<button id="draw_button" onclick="chooseDraw()">Draw</button>
-						<button id="loss_button" onclick="chooseLoss()">Loss</button>
+						<button id="win_button1" onclick="chooseWin()">Home Win</button>
+						<button id="draw_button1" onclick="chooseDraw()">Draw</button>
+						<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
+					</div>
+					<div class="odds">
+						<p class = "spec_odds_home"></p>
+						<p class = "spec_odds_draw"></p>
+						<p class = "spec_odds_away"></p>
 					</div>
 					<div id="betting_amount">
 						<form action="" method="post">
@@ -161,9 +166,14 @@
 						<p id="Bournemouth">Bournemouth</p>
 					</div>
 					<div>
-						<button id="win_button" onclick="chooseWin()">Win</button>
-						<button id="draw_button" onclick="chooseDraw()">Draw</button>
-						<button id="loss_button" onclick="chooseLoss()">Loss</button>
+						<button id="win_button1" onclick="chooseWin()">Home Win</button>
+						<button id="draw_button1" onclick="chooseDraw()">Draw</button>
+						<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
+					</div>
+					<div class="odds">
+						<p class = "spec_odds_home"></p>
+						<p class = "spec_odds_draw"></p>
+						<p class = "spec_odds_away"></p>
 					</div>
 					<div id="betting_amount">
 						<form action="" method="post">
@@ -185,9 +195,14 @@
 						<p id="Tottenham">Tottenham</p>
 					</div>
 					<div>
-						<button id="win_button" onclick="chooseWin()">Win</button>
-						<button id="draw_button" onclick="chooseDraw()">Draw</button>
-						<button id="loss_button" onclick="chooseLoss()">Loss</button>
+						<button id="win_button1" onclick="chooseWin()">Home Win</button>
+						<button id="draw_button1" onclick="chooseDraw()">Draw</button>
+						<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
+					</div>
+					<div class="odds">
+						<p class = "spec_odds_home"></p>
+						<p class = "spec_odds_draw"></p>
+						<p class = "spec_odds_away"></p>
 					</div>
 					<div id="betting_amount">
 						<form action="" method="post">
@@ -209,9 +224,14 @@
 						<p id="Fulham">Fulham</p>
 					</div>
 					<div>
-						<button id="win_button" onclick="chooseWin()">Win</button>
-						<button id="draw_button" onclick="chooseDraw()">Draw</button>
-						<button id="loss_button" onclick="chooseLoss()">Loss</button>
+						<button id="win_button1" onclick="chooseWin()">Home Win</button>
+						<button id="draw_button1" onclick="chooseDraw()">Draw</button>
+						<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
+					</div>
+					<div class="odds">
+						<p class = "spec_odds_home"></p>
+						<p class = "spec_odds_draw"></p>
+						<p class = "spec_odds_away"></p>
 					</div>
 					<div id="betting_amount">
 						<form action="" method="post">
@@ -233,9 +253,14 @@
 						<p id="away_newcastle">Newcastle United</p>
 					</div>
 					<div>
-						<button id="win_button" onclick="chooseWin()">Win</button>
-						<button id="draw_button" onclick="chooseDraw()">Draw</button>
-						<button id="loss_button" onclick="chooseLoss()">Loss</button>
+						<button id="win_button1" onclick="chooseWin()">Home Win</button>
+						<button id="draw_button1" onclick="chooseDraw()">Draw</button>
+						<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
+					</div>
+					<div class="odds">
+						<p class = "spec_odds_home"></p>
+						<p class = "spec_odds_draw"></p>
+						<p class = "spec_odds_away"></p>
 					</div>
 					<div id="betting_amount">
 						<form action="" method="post">
@@ -257,9 +282,14 @@
 						<p id="away_west">West Ham</p>
 					</div>
 					<div>
-						<button id="win_button" onclick="chooseWin()">Win</button>
-						<button id="draw_button" onclick="chooseDraw()">Draw</button>
-						<button id="loss_button" onclick="chooseLoss()">Loss</button>
+						<button id="win_button1" onclick="chooseWin()">Home Win</button>
+						<button id="draw_button1" onclick="chooseDraw()">Draw</button>
+						<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
+					</div>
+					<div class="odds">
+						<p class = "spec_odds_home"></p>
+						<p class = "spec_odds_draw"></p>
+						<p class = "spec_odds_away"></p>
 					</div>
 					<div id="betting_amount">
 						<form action="" method="post">
@@ -281,9 +311,14 @@
 						<p id="away_wovles">Wovles</p>
 					</div>
 					<div>
-						<button id="win_button" onclick="chooseWin()">Win</button>
-						<button id="draw_button" onclick="chooseDraw()">Draw</button>
-						<button id="loss_button" onclick="chooseLoss()">Loss</button>
+						<button id="win_button1" onclick="chooseWin()">Home Win</button>
+						<button id="draw_button1" onclick="chooseDraw()">Draw</button>
+						<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
+					</div>
+					<div class="odds">
+						<p class = "spec_odds_home"></p>
+						<p class = "spec_odds_draw"></p>
+						<p class = "spec_odds_away"></p>
 					</div>
 					<div id="betting_amount">
 						<form action="" method="post">
@@ -305,9 +340,14 @@
 						<p id="away_liverpool">Liverpool</p>
 					</div>
 					<div>
-						<button id="win_button" onclick="chooseWin()">Win</button>
-						<button id="draw_button" onclick="chooseDraw()">Draw</button>
-						<button id="loss_button" onclick="chooseLoss()">Loss</button>
+						<button id="win_button1" onclick="chooseWin()">Home Win</button>
+						<button id="draw_button1" onclick="chooseDraw()">Draw</button>
+						<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
+					</div>
+					<div class="odds">
+						<p class = "spec_odds_home"></p>
+						<p class = "spec_odds_draw"></p>
+						<p class = "spec_odds_away"></p>
 					</div>
 					<div id="betting_amount">
 						<form action="" method="post">
@@ -332,7 +372,7 @@
 						<tbody>
 							<tr>
 								<th scope="row">1</th>
-								<td>Win</td>
+								<td>Home Win</td>
 								<td>50000</td>
 								<td>Irvine MCS</td>
 							</tr>
@@ -344,7 +384,7 @@
 							</tr>
 							<tr>
 								<th scope="row">3</th>
-								<td>Loss</td>
+								<td>Away Win</td>
 								<td>80</td>
 								<td>password</td>
 							</tr>
@@ -563,6 +603,22 @@
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
 	<script src="js/main.js"></script>
+	<script>
+		const out = document.cookie.match(/winorloss=(\w+)/);
+		const result = document.cookie.match(/authorization=(\w+)/);
+		if(result[1] == "success" && out[1] == 'success'){
+			const num1 = "3.56";
+			const num2 = "2.57";
+			const num3 = "4.20";
+			var input_home = document.getElementsByClassName("spec_odds_home");
+			var input_draw = document.getElementsByClassName("spec_odds_draw");
+			var input_away = document.getElementsByClassName("spec_odds_away");
+			input_home[0].innerHTML = "odd = " + num1;
+			input_draw[0].innerHTML = "odd = " + num2;
+			input_away[0].innerHTML = "odd = " + num3;
+			input_home[1].innerHTML = "odd = 20.34";
+		}
+	</script>
 
 </body>
 

@@ -778,6 +778,18 @@ div.comment:first-of-type {
     border: 2px solid #4CAF50;
 }
 
+#win_button1{
+    background-color:red;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    margin-left: 14%;
+    margin-right: 6%;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid #4CAF50;
+}
+
 #draw_button{
     background-color:red;
     color: white;
@@ -790,7 +802,31 @@ div.comment:first-of-type {
     border: 2px solid #4CAF50;
 }
 
+#draw_button1{
+    background-color:red;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    margin-left: 1.5%;
+    margin-right: 6%;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid #4CAF50;
+}
+
 #loss_button{
+    background-color:red;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    margin-left: 2%;
+    margin-right: 10%;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid #4CAF50;
+}
+
+#loss_button1{
     background-color:red;
     color: white;
     font-family: "Times New Roman", Times, serif;
@@ -809,7 +845,21 @@ div.comment:first-of-type {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+#win_button1:hover {
+    cursor: pointer;
+    background-color: #fc5f03;
+    transform: matrix(1.1);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 #draw_button:hover {
+    cursor: pointer;
+    background-color: #fc5f03;
+    transform: matrix(1.1);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#draw_button1:hover {
     cursor: pointer;
     background-color: #fc5f03;
     transform: matrix(1.1);
@@ -823,7 +873,15 @@ div.comment:first-of-type {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-#win_button:active, #win_button:focus, #draw_button:active, #draw_button:focus, #loss_button:active, #loss_button:focus{
+#loss_button1:hover {
+    cursor: pointer;
+    background-color: #fc5f03;
+    transform: matrix(1.1);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#win_button:active, #win_button:focus, #draw_button:active, #draw_button:focus, #loss_button:active, #loss_button:focus,
+#win_button1:active, #win_button1:focus, #draw_button1:active, #draw_button1:focus, #loss_button1:active, #loss_button1:focus{
     background-color: #fc5f03;
     transform: matrix(1.1);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -1049,4 +1107,28 @@ div.comment:first-of-type {
 
 #warning-message{
     color: #fc0404;
+}
+
+.odds{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+.spec_odds_home{
+    margin-right: 40px;
+}
+
+.spec_odds_draw{
+    margin-left: 50px;
+    margin-right: 80px;
+}
+
+.spec_odds_away{
+    margin-left: 25px;
+}
+
+.spec_odds_home,.spec_odds_draw,.spec_odds_away{
+    color: #37d689;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

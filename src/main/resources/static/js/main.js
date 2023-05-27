@@ -1416,3 +1416,20 @@ function tiaotrigger() {
     myVar = setTimeout(tiao, 3000);
 }
 //setTimeout("tiao()",5000);
+
+function winorloss(){
+    //alert("I'm in");
+    //window.location.href = 'post.html';
+    document.cookie = 'winorloss=success';
+    /*const num1 = "3.56";
+    const num2 = "2.57";
+    const num3 = "4.20";
+    var input_home = document.getElementsByClassName("spec_odds_home");
+    var input_draw = document.getElementsByClassName("spec_odds_draw");
+    var input_away = document.getElementsByClassName("spec_odds_away");
+    input_home[0].innerHTML = "odd = " + num1;
+    input_draw[0].innerHTML = "odd = " + num2;
+    input_away[0].innerHTML = "odd = " + num3;
+    input_home[1].innerHTML = "odd = 20.34";*/
+    return true;
+}
