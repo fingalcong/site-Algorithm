@@ -136,12 +136,81 @@
 		const jwtoken = document.cookie.match(/jwt=([^;]+)/);
 		const result = document.cookie.match(/authorization=(\w+)/);
 		const access = document.cookie.match(/access=(\w+)/);
+		//let len = 0;
+		
 		var xhr = new XMLHttpRequest();
     	xhr.onreadystatechange = function() {
 			if (xhr.readyState == XMLHttpRequest.DONE) {
 				//alert(xhr.status)//200, 403
-				data = JSON.parse(xhr.response)[0].id;
-				alert(data);
+				if(result[1] == "success" && access[1] == 'success'){
+					var text = document.getElementById('warning-message');
+					text.innerText = "Successfully Log in";
+					text.style.color = "green";
+
+					var username = document.getElementById('username-purchase');
+					username.innerText = "Email: " + JSON.parse(xhr.response)[0].email;
+					username.style.color = "blue";
+
+					const len = JSON.parse(xhr.response).length;
+					//data = JSON.parse(xhr.response)[0].id;
+
+					for(let i = 0; i < len; i++){
+						var tbody = document.querySelector('#data_purchase_history');
+						var tr = document.createElement('tr');
+						var td0 = document.createElement('td');
+						var td1 = document.createElement('td');
+						var td2 = document.createElement('td');
+						var td3 = document.createElement('td');
+						var td4 = document.createElement('td');
+						var td5 = document.createElement('td');
+						var td6 = document.createElement('td');
+
+						td0.innerHTML = i + 1;
+						td1.innerHTML = JSON.parse(xhr.response)[i].homeTeam;
+						td2.innerHTML = JSON.parse(xhr.response)[i].awayTeam;
+						td3.innerHTML = JSON.parse(xhr.response)[i].type;
+						td4.innerHTML = JSON.parse(xhr.response)[i].subType;
+						td5.innerHTML = JSON.parse(xhr.response)[i].amount;
+						td6.innerHTML = JSON.parse(xhr.response)[i].id;
+
+						tr.append(td0);
+						tr.append(td1);
+						tr.append(td2);
+						tr.append(td3);
+						tr.append(td4);
+						tr.append(td5);
+						tr.append(td6);
+						tbody.append(tr);
+					}
+
+					/*var tbody = document.querySelector('#data_purchase_history');
+					var tr = document.createElement('tr');
+					var td0 = document.createElement('td');
+					var td1 = document.createElement('td');
+					var td2 = document.createElement('td');
+					var td3 = document.createElement('td');
+					var td4 = document.createElement('td');
+					var td5 = document.createElement('td');
+					var td6 = document.createElement('td');
+
+					td0.innerHTML = '1'; //change this num to a count when utilizing later
+					td1.innerHTML = 'Arsenal';
+					td2.innerHTML = 'Liverpool';
+					td3.innerHTML = 'Big or Small';
+					td4.innerHTML = 'Big';
+					td5.innerHTML = '50000';
+					td6.innerHTML = 'UCI MCS';
+
+					tr.append(td0);
+					tr.append(td1);
+					tr.append(td2);
+					tr.append(td3);
+					tr.append(td4);
+					tr.append(td5);
+					tr.append(td6);
+					tbody.append(tr);*/
+				}
+				//alert(data);
 			}
     	}
 		var url = "http://localhost:8080/api/v1/order/MyOrder";
@@ -149,43 +218,6 @@
 		xhr.setRequestHeader('Authorization', 'Bearer ' + jwtoken[1]);
 		//xhr.setRequestHeader("Content-Type", "application/json");
 		xhr.send();
-
-		if(result[1] == "success" && access[1] == 'success'){
-			var text = document.getElementById('warning-message');
-			text.innerText = "Successfully Log in";
-			text.style.color = "green";
-
-			var username = document.getElementById('username-purchase');
-			username.innerText = "Username" + ": Alex";
-			username.style.color = "blue";
-
-			var tbody = document.querySelector('#data_purchase_history');
-			var tr = document.createElement('tr');
-			var td0 = document.createElement('td');
-			var td1 = document.createElement('td');
-			var td2 = document.createElement('td');
-			var td3 = document.createElement('td');
-			var td4 = document.createElement('td');
-			var td5 = document.createElement('td');
-			var td6 = document.createElement('td');
-
-			td0.innerHTML = '1'; //change this num to a count when utilizing later
-			td1.innerHTML = 'Arsenal';
-			td2.innerHTML = 'Liverpool';
-			td3.innerHTML = 'Big or Small';
-			td4.innerHTML = 'Big';
-			td5.innerHTML = '50000';
-			td6.innerHTML = 'UCI MCS';
-
-			tr.append(td0);
-			tr.append(td1);
-			tr.append(td2);
-			tr.append(td3);
-			tr.append(td4);
-			tr.append(td5);
-			tr.append(td6);
-			tbody.append(tr);
-		}
 	</script> 
 
 </body>
