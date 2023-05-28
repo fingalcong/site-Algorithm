@@ -45,16 +45,16 @@
 					    <a class="nav-link" href="post.html" onclick="return winorloss()"><i class="fas fa-file-alt fa-fw mr-2"></i>Betting games</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="bigsmall.html"><i class="fas fa-file-alt fa-fw mr-2"></i>Betting Big Small</a>
+						<a class="nav-link" href="bigsmall.html" onclick="return bigsmall()"><i class="fas fa-file-alt fa-fw mr-2"></i>Betting Big Small</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="corner.html"><i class="fas fa-file-alt fa-fw mr-2"></i>Betting Corners</a>
+						<a class="nav-link" href="corner.html" onclick="return corner()"><i class="fas fa-file-alt fa-fw mr-2"></i>Betting Corners</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="card.html"><i class="fas fa-file-alt fa-fw mr-2"></i>Betting Cards</a>
+						<a class="nav-link" href="card.html" onclick="return card()"><i class="fas fa-file-alt fa-fw mr-2"></i>Betting Cards</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="page.html" id="purchase_history"><i class="fas fa-file-image fa-fw mr-2"></i>Purchase history</a>
+						<a class="nav-link" href="page.html" id="purchase_history" onclick="return history()"><i class="fas fa-file-image fa-fw mr-2"></i>Purchase history</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="archive.html"><i class="fas fa-archive fa-fw mr-2"></i>About us</a>
@@ -577,6 +577,22 @@
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
 	<script src="js/main.js"></script>
+	<script>
+		const out = document.cookie.match(/corners=(\w+)/);
+		const result = document.cookie.match(/authorization=(\w+)/);
+		if(result[1] == "success" && out[1] == 'success'){
+			const num1 = "3.56";
+			const num2 = "2.57";
+			const num3 = "4.20";
+			var input_home = document.getElementsByClassName("spec_odds_home");
+			var input_draw = document.getElementsByClassName("spec_odds_draw");
+			var input_away = document.getElementsByClassName("spec_odds_away");
+			input_home[0].innerHTML = "odd = " + num1;
+			input_draw[0].innerHTML = "odd = " + num2;
+			input_away[0].innerHTML = "odd = " + num3;
+			input_home[1].innerHTML = "odd = 20.34";
+		}
+	</script>
 
 </body>
 

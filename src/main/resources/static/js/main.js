@@ -1433,3 +1433,23 @@ function winorloss(){
     input_home[1].innerHTML = "odd = 20.34";*/
     return true;
 }
+
+function bigsmall(){
+    document.cookie = 'bigsmall=success';
+    return true;
+}
+
+function corner(){
+    document.cookie = 'corners=success';
+    return true;
+}
+
+function card(){
+    document.cookie = 'cards=success';
+    return true;
+}
+
+function history(){
+    document.cookie = 'access=success';
+    return true;
+}
