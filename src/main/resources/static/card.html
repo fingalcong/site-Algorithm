@@ -580,18 +580,70 @@
 	<script>
 		const out = document.cookie.match(/cards=(\w+)/);
 		const result = document.cookie.match(/authorization=(\w+)/);
-		if(result[1] == "success" && out[1] == 'success'){
-			const num1 = "3.56";
-			const num2 = "2.57";
-			const num3 = "4.20";
-			var input_home = document.getElementsByClassName("spec_odds_home");
-			var input_draw = document.getElementsByClassName("spec_odds_draw");
-			var input_away = document.getElementsByClassName("spec_odds_away");
-			input_home[0].innerHTML = "odd = " + num1;
-			input_draw[0].innerHTML = "odd = " + num2;
-			input_away[0].innerHTML = "odd = " + num3;
-			input_home[1].innerHTML = "odd = 20.34";
-		}
+		const jwtoken = document.cookie.match(/jwt=([^;]+)/);
+		
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState == XMLHttpRequest.DONE) {
+				//alert(xhr.status)//200, 403
+				if(result[1] == "success" && out[1] == 'success'){
+					const len = JSON.parse(xhr.response).length;
+					//data = JSON.parse(xhr.response)[0].id;
+
+					var input_home = document.getElementsByClassName("spec_odds_home");
+					var input_draw = document.getElementsByClassName("spec_odds_draw");
+					var input_away = document.getElementsByClassName("spec_odds_away");
+
+					for(let i = 0; i < len; i++){
+						if(JSON.parse(xhr.response)[i].homeTeam == 'Aston Villa'){
+							//input_home[0].innerHTML = "odd = " + JSON.parse(xhr.response)[i].winOdd.toFixed(2);
+							input_draw[0].innerHTML = "ratio = " + JSON.parse(xhr.response)[i].ratio.toFixed(2);
+							//input_away[0].innerHTML = "odd = " + JSON.parse(xhr.response)[i].loseOdd.toFixed(2);
+						}
+						if(JSON.parse(xhr.response)[i].homeTeam == 'Everton'){
+							//input_home[1].innerHTML = "odd = " + JSON.parse(xhr.response)[i].winOdd.toFixed(2);
+							input_draw[1].innerHTML = "ratio = " + JSON.parse(xhr.response)[i].ratio.toFixed(2);
+							//input_away[1].innerHTML = "odd = " + JSON.parse(xhr.response)[i].loseOdd.toFixed(2);
+						}
+						if(JSON.parse(xhr.response)[i].homeTeam == 'Leeds'){
+							//input_home[2].innerHTML = "odd = " + JSON.parse(xhr.response)[i].winOdd.toFixed(2);
+							input_draw[2].innerHTML = "ratio = " + JSON.parse(xhr.response)[i].ratio.toFixed(2);
+							//input_away[2].innerHTML = "odd = " + JSON.parse(xhr.response)[i].loseOdd.toFixed(2);
+						}
+						if(JSON.parse(xhr.response)[i].homeTeam == 'Man United'){
+							//input_home[3].innerHTML = "odd = " + JSON.parse(xhr.response)[i].winOdd.toFixed(2);
+							input_draw[3].innerHTML = "ratio = " + JSON.parse(xhr.response)[i].ratio.toFixed(2);
+							//input_away[3].innerHTML = "odd = " + JSON.parse(xhr.response)[i].loseOdd.toFixed(2);
+						}
+						if(JSON.parse(xhr.response)[i].homeTeam == 'Chelsea'){
+							//input_home[4].innerHTML = "odd = " + JSON.parse(xhr.response)[i].winOdd.toFixed(2);
+							input_draw[4].innerHTML = "ratio = " + JSON.parse(xhr.response)[i].ratio.toFixed(2);
+							//input_away[4].innerHTML = "odd = " + JSON.parse(xhr.response)[i].loseOdd.toFixed(2);
+						}
+						if(JSON.parse(xhr.response)[i].homeTeam == 'Leicester'){
+							//input_home[5].innerHTML = "odd = " + JSON.parse(xhr.response)[i].winOdd.toFixed(2);
+							input_draw[5].innerHTML = "ratio = " + JSON.parse(xhr.response)[i].ratio.toFixed(2);
+							//input_away[5].innerHTML = "odd = " + JSON.parse(xhr.response)[i].loseOdd.toFixed(2);
+						}
+						if(JSON.parse(xhr.response)[i].homeTeam == 'Arsenal'){
+							//input_home[6].innerHTML = "odd = " + JSON.parse(xhr.response)[i].winOdd.toFixed(2);
+							input_draw[6].innerHTML = "ratio = " + JSON.parse(xhr.response)[i].ratio.toFixed(2);
+							//input_away[6].innerHTML = "odd = " + JSON.parse(xhr.response)[i].loseOdd.toFixed(2);
+						}
+						if(JSON.parse(xhr.response)[i].homeTeam == 'Southampton'){
+							//input_home[7].innerHTML = "odd = " + JSON.parse(xhr.response)[i].winOdd.toFixed(2);
+							input_draw[7].innerHTML = "ratio = " + JSON.parse(xhr.response)[i].ratio.toFixed(2);
+							//input_away[7].innerHTML = "odd = " + JSON.parse(xhr.response)[i].loseOdd.toFixed(2);
+						}
+					}
+				}
+			}
+    	}
+		var url = "http://localhost:8080/api/v1/teams/GetRedYellow";
+		xhr.open("GET", url, true);
+		xhr.setRequestHeader('Authorization', 'Bearer ' + jwtoken[1]);
+		//xhr.setRequestHeader("Content-Type", "application/json");
+		xhr.send();
 	</script>
 
 </body>
