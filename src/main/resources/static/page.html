@@ -133,16 +133,32 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 	<script>
-		//let temp = "success";
+		const jwtoken = document.cookie.match(/jwt=([^;]+)/);
 		const result = document.cookie.match(/authorization=(\w+)/);
-		const access = document.cookie.match(/access=(\w+)/)
+		const access = document.cookie.match(/access=(\w+)/);
+		var xhr = new XMLHttpRequest();
+    	xhr.onreadystatechange = function() {
+			if (xhr.readyState == XMLHttpRequest.DONE) {
+				//alert(xhr.status)//200, 403
+				data = JSON.parse(xhr.response)[0].id;
+				alert(data);
+			}
+    	}
+		var url = "http://localhost:8080/api/v1/order/MyOrder";
+		xhr.open("GET", url, true);
+		xhr.setRequestHeader('Authorization', 'Bearer ' + jwtoken[1]);
+		//xhr.setRequestHeader("Content-Type", "application/json");
+		xhr.send();
+
 		if(result[1] == "success" && access[1] == 'success'){
 			var text = document.getElementById('warning-message');
 			text.innerText = "Successfully Log in";
 			text.style.color = "green";
+
 			var username = document.getElementById('username-purchase');
 			username.innerText = "Username" + ": Alex";
 			username.style.color = "blue";
+
 			var tbody = document.querySelector('#data_purchase_history');
 			var tr = document.createElement('tr');
 			var td0 = document.createElement('td');

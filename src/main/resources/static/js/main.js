@@ -1453,3 +1453,9 @@ function history(){
     document.cookie = 'access=success';
     return true;
 }
+/*{
+    name:
+    history:{
+
+    }
+}*/
