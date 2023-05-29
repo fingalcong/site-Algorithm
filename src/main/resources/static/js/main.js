@@ -25,11 +25,11 @@ var XMLHttpRequestWithJWT = function (method, url, async){
     return xmlHttpRequest;
 };
 
-function submitStat(){
+/*function submitStat(){
     //console.log(result[1])
 
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -41,19 +41,20 @@ function submitStat(){
             //true_or_false = 0;
         }
 
-    /*const amount = document.getElementById("Amount_for_betting").value;
+    const amount = document.getElementById("Amount_for_betting").value;
     const security_code = document.getElementById("Security_for_betting").value;
-    */
+
     //alert(amount + security_code);
         if(true_or_false == 0){
             alert('You have not chosen which type to bet on');
         }
     }
-}
+}*/
 
 function submitStat_Villa(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
+        //location.reload();
     }
     else{
         if(true_or_false == 1){
@@ -75,6 +76,7 @@ function submitStat_Villa(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -82,13 +84,14 @@ function submitStat_Villa(){
         //alert(amount + security_code);
         if(true_or_false == 0){
             alert('You have not chosen which type to bet on');
+            //location.reload();
         }
     }
 }
 
 function submitbig_Villa(){chooseSmall()
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -110,6 +113,7 @@ function submitbig_Villa(){chooseSmall()
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -123,7 +127,7 @@ function submitbig_Villa(){chooseSmall()
 
 function submitCorner_Villa(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -145,6 +149,7 @@ function submitCorner_Villa(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -158,7 +163,7 @@ function submitCorner_Villa(){
 
 function submitCard_Villa(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -180,6 +185,7 @@ function submitCard_Villa(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -193,7 +199,7 @@ function submitCard_Villa(){
 
 function submitStat_Everton(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -215,6 +221,7 @@ function submitStat_Everton(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -228,7 +235,7 @@ function submitStat_Everton(){
 
 function submitbig_Everton(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -250,6 +257,7 @@ function submitbig_Everton(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -263,7 +271,7 @@ function submitbig_Everton(){
 
 function submitCorner_Everton(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -285,6 +293,7 @@ function submitCorner_Everton(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -298,7 +307,7 @@ function submitCorner_Everton(){
 
 function submitCard_Everton(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -320,6 +329,7 @@ function submitCard_Everton(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -333,7 +343,7 @@ function submitCard_Everton(){
 
 function submitStat_Leeds(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -355,6 +365,7 @@ function submitStat_Leeds(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -368,7 +379,7 @@ function submitStat_Leeds(){
 
 function submitbig_Leeds(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -390,6 +401,7 @@ function submitbig_Leeds(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -403,7 +415,7 @@ function submitbig_Leeds(){
 
 function submitCorner_Leeds(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -425,6 +437,7 @@ function submitCorner_Leeds(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -438,7 +451,7 @@ function submitCorner_Leeds(){
 
 function submitCard_Leeds(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -460,6 +473,7 @@ function submitCard_Leeds(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -473,7 +487,7 @@ function submitCard_Leeds(){
 
 function submitStat_United(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -495,6 +509,7 @@ function submitStat_United(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -508,7 +523,7 @@ function submitStat_United(){
 
 function submitbig_United(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -530,6 +545,7 @@ function submitbig_United(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -543,7 +559,7 @@ function submitbig_United(){
 
 function submitCorner_United(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -565,6 +581,7 @@ function submitCorner_United(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -578,7 +595,7 @@ function submitCorner_United(){
 
 function submitCard_United(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -600,6 +617,7 @@ function submitCard_United(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -613,7 +631,7 @@ function submitCard_United(){
 
 function submitStat_Chelsea(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -635,6 +653,7 @@ function submitStat_Chelsea(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -648,7 +667,7 @@ function submitStat_Chelsea(){
 
 function submitbig_Chelsea(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -670,6 +689,7 @@ function submitbig_Chelsea(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -683,7 +703,7 @@ function submitbig_Chelsea(){
 
 function submitCorner_Chelsea(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -705,6 +725,7 @@ function submitCorner_Chelsea(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -718,7 +739,7 @@ function submitCorner_Chelsea(){
 
 function submitCard_Chelsea(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -740,6 +761,7 @@ function submitCard_Chelsea(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -753,7 +775,7 @@ function submitCard_Chelsea(){
 
 function submitStat_Leicester(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -775,6 +797,7 @@ function submitStat_Leicester(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -788,7 +811,7 @@ function submitStat_Leicester(){
 
 function submitbig_Leicester(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -810,6 +833,7 @@ function submitbig_Leicester(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -823,7 +847,7 @@ function submitbig_Leicester(){
 
 function submitCorner_Leicester(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -845,6 +869,7 @@ function submitCorner_Leicester(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -858,7 +883,7 @@ function submitCorner_Leicester(){
 
 function submitCard_Leicester(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -880,6 +905,7 @@ function submitCard_Leicester(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -893,7 +919,7 @@ function submitCard_Leicester(){
 
 function submitStat_Arsenal(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -915,6 +941,7 @@ function submitStat_Arsenal(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -928,7 +955,7 @@ function submitStat_Arsenal(){
 
 function submitbig_Arsenal(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -950,6 +977,7 @@ function submitbig_Arsenal(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -963,7 +991,7 @@ function submitbig_Arsenal(){
 
 function submitCorner_Arsenal(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -985,6 +1013,7 @@ function submitCorner_Arsenal(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -998,7 +1027,7 @@ function submitCorner_Arsenal(){
 
 function submitCard_Arsenal(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -1020,6 +1049,7 @@ function submitCard_Arsenal(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -1034,7 +1064,7 @@ function submitCard_Arsenal(){
 
 function submitStat_Southampton(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -1056,6 +1086,7 @@ function submitStat_Southampton(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -1069,7 +1100,7 @@ function submitStat_Southampton(){
 
 function submitbig_Southampton(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -1091,6 +1122,7 @@ function submitbig_Southampton(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -1104,7 +1136,7 @@ function submitbig_Southampton(){
 
 function submitCorner_Southampton(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -1126,6 +1158,7 @@ function submitCorner_Southampton(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
@@ -1139,7 +1172,7 @@ function submitCorner_Southampton(){
 
 function submitCard_Southampton(){
     if(document.cookie.indexOf('authorization=') == -1){
-        alert('you must login first before having a bet')
+        alert('you must login first before having a bet');
     }
     else{
         if(true_or_false == 1){
@@ -1161,6 +1194,7 @@ function submitCard_Southampton(){
             };
 
             xhr.send(JSON.stringify(data));
+            location.reload();
         }
         /*const amount = document.getElementById("Amount_for_betting").value;
         const security_code = document.getElementById("Security_for_betting").value;
