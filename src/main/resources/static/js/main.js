@@ -17,11 +17,11 @@ let subtype_choice = '';
 
 //document.cookie = "authorization=success";
 var XMLHttpRequestWithJWT = function (method, url, async){
-    const result = document.cookie.match(/jwt=(.+)/);
+    const jwt_num = document.cookie.match(/jwt=([^;]+)/);
     var xmlHttpRequest = new XMLHttpRequest();
     xmlHttpRequest.open(method, url, async);
     //alert(result[1]);
-    xmlHttpRequest.setRequestHeader('Authorization', 'Bearer ' + result[1]);
+    xmlHttpRequest.setRequestHeader('Authorization', 'Bearer ' + jwt_num[1]);
     return xmlHttpRequest;
 };
 
