@@ -75,7 +75,7 @@
 		</nav>
     </header>
 
-    <div class="login_container">
+    <div class="login_container" id="login_form">
         <form class="form" id="login">
             <h1 class="form__title">Login</h1>
             <div class="form__message form__message--error"></div>
@@ -172,7 +172,7 @@
 		   
 	    </footer>
     
-    </div><!--//main-wrapper-->
+    </div>//main-wrapper-->
     
     
     <!-- Bootstrap Javascript -->          
@@ -180,6 +180,17 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
+    <script>
+        const result = document.cookie.match(/authorization=(\w+)/);
+        if(result[1] == 'success'){
+            var login_info = document.getElementById('login_form');
+            login_info.innerHTML = '';
+            var h3 = document.createElement('h3');
+            h3.innerText = 'You have already logged in. Return to home page in 3 seconds.';
+            login_info.append(h3);
+            tiaotrigger();
+        }
+    </script>
 
 </body>
 </html> 
