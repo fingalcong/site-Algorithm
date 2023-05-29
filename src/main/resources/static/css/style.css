@@ -772,7 +772,7 @@ div.comment:first-of-type {
     font-family: "Times New Roman", Times, serif;
     font-size: 30px;
     margin-left: 18%;
-    margin-right: 10%;
+    margin-right: 7%;
     border: none;
     border-radius: 5px;
     border: 2px solid #4CAF50;
@@ -1163,11 +1163,15 @@ div.comment:first-of-type {
     margin-right: 80px;
 }
 
+.spec_odds_draw1{
+    margin-left: 120px;
+}
+
 .spec_odds_away{
     margin-left: 25px;
 }
 
-.spec_odds_home,.spec_odds_draw,.spec_odds_away{
+.spec_odds_home,.spec_odds_draw,.spec_odds_away, .spec_odds_draw1{
     color: #37d689;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
