@@ -1175,3 +1175,7 @@ div.comment:first-of-type {
     color: #37d689;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+#ratio_explain{
+    color: var(--pink);
+}
