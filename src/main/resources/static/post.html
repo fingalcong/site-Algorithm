@@ -102,6 +102,36 @@
 
 
 					<h3 class="mt-5 mb-3">Win or Loss</h3>
+					<div class="betting_table_sum">
+						<div id="betting_table">
+							<a href="#"><img id="Liverpool" src="./images/Aston Villa.png" alt="Icon of Aston Villa"></a>
+							<a href="#"><img id="Arsenal" src="./images/Brighton & Hove Albion.png" alt="Icon of Brighton"></a>
+					
+						</div>
+						<div id="team_name">
+							<p id="Villa">Aston Villa</p>
+							<p id="Brighton">Brighton</p>
+						</div>
+						<div>
+							<button id="win_button1" onclick="chooseWin()">Home Win</button>
+							<button id="draw_button1" onclick="chooseDraw()">Draw</button>
+							<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
+						</div>
+						<div class="odds">
+							<p class = "spec_odds_home"></p>
+							<p class = "spec_odds_draw"></p>
+							<p class = "spec_odds_away"></p>
+						</div>
+						<div id="betting_amount">
+							<form action="" method="post">
+								<label for="amount">Amount</label>
+								<Input type="number" class="AmountControl" id="Amount_for_betting_Villa" name="betting_amount"><br>
+								<button id="submit_button" type="button" value="button" onclick="submitStat_Villa()">Submit</button>
+								<button id="reset_button" type="reset" value="Reset">Reset</button>
+							</form>
+							<!--<input type="submit" id="submit_icon" value="Submit">-->
+						</div>
+					</div>
 					<div id="betting_table">
 						<a href="#"><img id="Liverpool" src="./images/Aston Villa.png" alt="Icon of Aston Villa"></a>
 						<a href="#"><img id="Arsenal" src="./images/Brighton & Hove Albion.png" alt="Icon of Brighton"></a>

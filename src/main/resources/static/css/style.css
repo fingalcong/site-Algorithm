@@ -1071,7 +1071,7 @@ div.comment:first-of-type {
     margin: 0;
     display: flex;
     font-size: 18px;
-    background: url(./background.jpg);
+    background: url(login_background.jpg);
     background-size: cover;
 }
 
@@ -1178,4 +1178,9 @@ div.comment:first-of-type {
 
 #ratio_explain{
     color: var(--pink);
+}
+
+.betting_table_sum{
+    background: url(720.jpg);
+    background-size: cover;
 }
