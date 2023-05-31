@@ -89,7 +89,7 @@ function submitStat_Villa(){
     }
 }
 
-function submitbig_Villa(){chooseSmall()
+function submitbig_Villa(){
     if(document.cookie.indexOf('authorization=') == -1){
         alert('you must login first before having a bet');
     }
@@ -1238,7 +1238,7 @@ function chooseSmall(){
 
 function cardBig(){
     type_choice = 'cards';
-    subtype_choice = 'small';
+    subtype_choice = 'big';
     true_or_false = 1;
 }
 
