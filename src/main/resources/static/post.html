@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 	<!-- Bootstrap CSS-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<!-- Theme CSS -->
 	<link rel="stylesheet" href="css/style.css">
 
@@ -23,119 +23,90 @@
 
 <body>
 
-	<header class="header text-center">
-		<a class="site-title pt-lg-4 mb-0" href="index.html">Betting.com</a>
+<header class="header text-center">
+	<a class="site-title pt-lg-4 mb-0" href="index.html">Betting.com</a>
 
-		<nav class="navbar navbar-expand-lg navbar-dark">
+	<nav class="navbar navbar-expand-lg navbar-dark">
 
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
 				aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-			<div id="navigation" class="collapse navbar-collapse flex-column">
-				<img class="mb-3 mx-auto logo" src="images/soccer_ball.jpg" alt="logo">
+		<div id="navigation" class="collapse navbar-collapse flex-column">
+			<img class="mb-3 mx-auto logo" src="images/soccer_ball.jpg" alt="logo">
 
-				<ul class="navbar-nav flex-column text-sm-center text-md-left">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Betting Home <span
-								class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item active">
-					    <a class="nav-link" href="post.html" onclick="return winorloss()"><i class="fas fa-file-alt fa-fw mr-2"></i>Betting games</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="bigsmall.html" onclick="return bigsmall()"><i class="fas fa-file-alt fa-fw mr-2"></i>Betting Big Small</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="corner.html" onclick="return corner()"><i class="fas fa-file-alt fa-fw mr-2"></i>Betting Corners</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="card.html" onclick="return card()"><i class="fas fa-file-alt fa-fw mr-2"></i>Betting Cards</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="page.html" id="purchase_history" onclick="return history"><i class="fas fa-file-image fa-fw mr-2"></i>Purchase history</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="archive.html"><i class="fas fa-archive fa-fw mr-2"></i>About us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link btn btn-primary" href="contact.html"><i
-								class="fas fa-envelope fa-fw mr-2"></i>Contact Us</a>
-					</li>
-					<li class="nav-item" id="login_page">
-                        <a class="nav-link" id="login-page" href="login.html"><i class = "fas fa-envelope fa-fw mr-2"></i>Log In or Sign Up</a>
-                    </li>
-				</ul>
-				<hr>
-				<ul class="social-list list-inline py-3 mx-auto">
-					<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-					<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-					<li class="list-inline-item"><a href="#"><i class="fab fa-github-alt fa-fw"></i></a></li>
-					<li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
-					<li class="list-inline-item"><a href="#"><i class="fab fa-codepen fa-fw"></i></a></li>
-				</ul>
+			<ul class="navbar-nav flex-column text-sm-center text-md-left">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Betting Home <span
+							class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="post.html" onclick="return winorloss()"><i class="fas fa-file-alt fa-fw mr-2"></i>Betting games</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="bigsmall.html" onclick="return bigsmall()"><i class="fas fa-file-alt fa-fw mr-2"></i>Betting Big Small</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="corner.html" onclick="return corner()"><i class="fas fa-file-alt fa-fw mr-2"></i>Betting Corners</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="card.html" onclick="return card()"><i class="fas fa-file-alt fa-fw mr-2"></i>Betting Cards</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="page.html" id="purchase_history" onclick="return history"><i class="fas fa-file-image fa-fw mr-2"></i>Purchase history</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="archive.html"><i class="fas fa-archive fa-fw mr-2"></i>About us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link btn btn-primary" href="contact.html"><i
+							class="fas fa-envelope fa-fw mr-2"></i>Contact Us</a>
+				</li>
+				<li class="nav-item" id="login_page">
+					<a class="nav-link" id="login-page" href="login.html"><i class = "fas fa-envelope fa-fw mr-2"></i>Log In or Sign Up</a>
+				</li>
+			</ul>
+			<hr>
+			<ul class="social-list list-inline py-3 mx-auto">
+				<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+				<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+				<li class="list-inline-item"><a href="#"><i class="fab fa-github-alt fa-fw"></i></a></li>
+				<li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
+				<li class="list-inline-item"><a href="#"><i class="fab fa-codepen fa-fw"></i></a></li>
+			</ul>
 
-			</div>
-		</nav>
+		</div>
+	</nav>
+</header>
+
+<div class="main-wrapper">
+	<header class="page-title theme-bg-light text-center gradient py-5">
+		<h1 class="heading">The Games that can bet for now</h1>
 	</header>
+	<article class="content px-3 py-5 p-md-5">
+		<div class="container">
+			<header class="content-header">
+				<div class="meta mb-3"><span class="date">Published 1 day ago</span><span class="tag"><i class='fa fa-tag'></i> tag</span><span class="tag"><i class='fa fa-tag'></i> category</span><span class="comment"><a href="#comments"><i class='fa fa-comment'></i> 3 comments</a></span></div>
+			</header>
 
-	<div class="main-wrapper">
-		<header class="page-title theme-bg-light text-center gradient py-5">
-			<h1 class="heading">The Games that can bet for now</h1>
-		</header>
-		<article class="content px-3 py-5 p-md-5">
-			<div class="container">
-				<header class="content-header">
-					<div class="meta mb-3"><span class="date">Published 1 day ago</span><span class="tag"><i class='fa fa-tag'></i> tag</span><span class="tag"><i class='fa fa-tag'></i> category</span><span class="comment"><a href="#comments"><i class='fa fa-comment'></i> 3 comments</a></span></div>
-				</header>
-
-				<div class="content-body">
-					<figure class="blog-banner">
-						<a href="#"><img class="img-fluid" src="images/betting_img.png" alt="image"></a>
-						<figcaption class="mt-2 text-center image-caption">Image Credit: 
-							<a href="https://www.google.com/search?q=premier+league+for+next+week&rlz=1C1RXMK_enUS977US977&oq=premier+league+for+next+week&aqs=chrome..69i57j0i22i30l8j0i390i650.6383j1j7&sourceid=chrome&ie=UTF-8#sie=lg;/g/11pz7zbpnb;2;/m/02_tc;mt;fp;1;;;" 
-							target="_blank">URL
-								Here</a></figcaption>
-					</figure>
-					<p>The above one is the picture for the matches in next week. We will update the betting games once a week and to let users bet on the games for next week </p>
+			<div class="content-body">
+				<figure class="blog-banner">
+					<a href="#"><img class="img-fluid" src="images/betting_img.png" alt="image"></a>
+					<figcaption class="mt-2 text-center image-caption">Image Credit:
+						<a href="https://www.google.com/search?q=premier+league+for+next+week&rlz=1C1RXMK_enUS977US977&oq=premier+league+for+next+week&aqs=chrome..69i57j0i22i30l8j0i390i650.6383j1j7&sourceid=chrome&ie=UTF-8#sie=lg;/g/11pz7zbpnb;2;/m/02_tc;mt;fp;1;;;"
+						   target="_blank">URL
+							Here</a></figcaption>
+				</figure>
+				<p>The above one is the picture for the matches in next week. We will update the betting games once a week and to let users bet on the games for next week </p>
 
 
-					<h3 class="mt-5 mb-3">Win or Loss</h3>
-					<div class="betting_table_sum">
-						<div id="betting_table">
-							<a href="#"><img id="Liverpool" src="./images/Aston Villa.png" alt="Icon of Aston Villa"></a>
-							<a href="#"><img id="Arsenal" src="./images/Brighton & Hove Albion.png" alt="Icon of Brighton"></a>
-					
-						</div>
-						<div id="team_name">
-							<p id="Villa">Aston Villa</p>
-							<p id="Brighton">Brighton</p>
-						</div>
-						<div>
-							<button id="win_button1" onclick="chooseWin()">Home Win</button>
-							<button id="draw_button1" onclick="chooseDraw()">Draw</button>
-							<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
-						</div>
-						<div class="odds">
-							<p class = "spec_odds_home"></p>
-							<p class = "spec_odds_draw"></p>
-							<p class = "spec_odds_away"></p>
-						</div>
-						<div id="betting_amount">
-							<form action="" method="post">
-								<label for="amount">Amount</label>
-								<Input type="number" class="AmountControl" id="Amount_for_betting_Villa" name="betting_amount"><br>
-								<button id="submit_button" type="button" value="button" onclick="submitStat_Villa()">Submit</button>
-								<button id="reset_button" type="reset" value="Reset">Reset</button>
-							</form>
-							<!--<input type="submit" id="submit_icon" value="Submit">-->
-						</div>
-					</div>
+				<h3 class="mt-5 mb-3">Win or Loss</h3>
+				<div class="betting_table_sum">
 					<div id="betting_table">
 						<a href="#"><img id="Liverpool" src="./images/Aston Villa.png" alt="Icon of Aston Villa"></a>
 						<a href="#"><img id="Arsenal" src="./images/Brighton & Hove Albion.png" alt="Icon of Brighton"></a>
-				
+
 					</div>
 					<div id="team_name">
 						<p id="Villa">Aston Villa</p>
@@ -160,405 +131,360 @@
 						</form>
 						<!--<input type="submit" id="submit_icon" value="Submit">-->
 					</div>
-
-					<div id="betting_table">
-						<a href="#"><img id="Liverpool" src="./images/Everton.png" alt="Icon of Everton"></a>
-						<a href="#"><img id="Bournemouth_img" src="./images/AFC_Bournemouth.png" alt="Icon of Bournemouth"></a>
-				
-					</div>
-					<div id="team_name">
-						<p id="Everton">Everton</p>
-						<p id="Bournemouth">Bournemouth</p>
-					</div>
-					<div>
-						<button id="win_button1" onclick="chooseWin()">Home Win</button>
-						<button id="draw_button1" onclick="chooseDraw()">Draw</button>
-						<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
-					</div>
-					<div class="odds">
-						<p class = "spec_odds_home"></p>
-						<p class = "spec_odds_draw"></p>
-						<p class = "spec_odds_away"></p>
-					</div>
-					<div id="betting_amount">
-						<form action="" method="post">
-							<label for="amount">Amount</label>
-							<Input type="number" class="AmountControl" id="Amount_for_betting_Everton" name="betting_amount"><br>
-							<button id="submit_button" type="button" value="button" onclick="submitStat_Everton()">Submit</button>
-							<button id="reset_button" type="reset" value="Reset">Reset</button>
-						</form>
-						<!--<input type="submit" id="submit_icon" value="Submit">-->
-					</div>
-
-					<div id="betting_table">
-						<a href="#"><img id="Liverpool" src="./images/Leeds United.png" alt="Icon of Leeds"></a>
-						<a href="#"><img id="Arsenal" src="./images/Tottenham Hotspur.png" alt="Icon of Tottenham"></a>
-				
-					</div>
-					<div id="team_name">
-						<p id="Leeds">Leeds United</p>
-						<p id="Tottenham">Tottenham</p>
-					</div>
-					<div>
-						<button id="win_button1" onclick="chooseWin()">Home Win</button>
-						<button id="draw_button1" onclick="chooseDraw()">Draw</button>
-						<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
-					</div>
-					<div class="odds">
-						<p class = "spec_odds_home"></p>
-						<p class = "spec_odds_draw"></p>
-						<p class = "spec_odds_away"></p>
-					</div>
-					<div id="betting_amount">
-						<form action="" method="post">
-							<label for="amount">Amount</label>
-							<Input type="number" class="AmountControl" id="Amount_for_betting_Leeds" name="betting_amount"><br>
-							<button id="submit_button" type="button" value="button" onclick="submitStat_Leeds()">Submit</button>
-							<button id="reset_button" type="reset" value="Reset">Reset</button>
-						</form>
-						<!--<input type="submit" id="submit_icon" value="Submit">-->
-					</div>
-
-					<div id="betting_table">
-						<a href="#"><img id="Liverpool" src="./images/Manchester United.png" alt="Icon of Manchester United"></a>
-						<a href="#"><img id="Arsenal" src="./images/Fulham.png" alt="Icon of Fulham"></a>
-				
-					</div>
-					<div id="team_name">
-						<p id="Man_United">Manchester United</p>
-						<p id="Fulham">Fulham</p>
-					</div>
-					<div>
-						<button id="win_button1" onclick="chooseWin()">Home Win</button>
-						<button id="draw_button1" onclick="chooseDraw()">Draw</button>
-						<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
-					</div>
-					<div class="odds">
-						<p class = "spec_odds_home"></p>
-						<p class = "spec_odds_draw"></p>
-						<p class = "spec_odds_away"></p>
-					</div>
-					<div id="betting_amount">
-						<form action="" method="post">
-							<label for="amount">Amount</label>
-							<Input type="number" class="AmountControl" id="Amount_for_betting_United" name="betting_amount"><br>
-							<button id="submit_button" type="button" value="button" onclick="submitStat_United()">Submit</button>
-							<button id="reset_button" type="reset" value="Reset">Reset</button>
-						</form>
-						<!--<input type="submit" id="submit_icon" value="Submit">-->
-					</div>
-
-					<div id="betting_table">
-						<a href="#"><img id="Liverpool" src="./images/Chelsea.png" alt="Icon of Chelsea"></a>
-						<a href="#"><img id="Arsenal" src="./images/Newcastle United.png" alt="Icon of Newcastle United"></a>
-				
-					</div>
-					<div id="team_name">
-						<p id="Chelsea">Chelsea</p>
-						<p id="away_newcastle">Newcastle United</p>
-					</div>
-					<div>
-						<button id="win_button1" onclick="chooseWin()">Home Win</button>
-						<button id="draw_button1" onclick="chooseDraw()">Draw</button>
-						<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
-					</div>
-					<div class="odds">
-						<p class = "spec_odds_home"></p>
-						<p class = "spec_odds_draw"></p>
-						<p class = "spec_odds_away"></p>
-					</div>
-					<div id="betting_amount">
-						<form action="" method="post">
-							<label for="amount">Amount</label>
-							<Input type="number" class="AmountControl" id="Amount_for_betting_Chelsea" name="betting_amount"><br>
-							<button id="submit_button" type="button" value="button" onclick="submitStat_Chelsea()">Submit</button>
-							<button id="reset_button" type="reset" value="Reset">Reset</button>
-						</form>
-						<!--<input type="submit" id="submit_icon" value="Submit">-->
-					</div>
-
-					<div id="betting_table">
-						<a href="#"><img id="Liverpool" src="./images/Leicester City.png" alt="Icon of Leicester City"></a>
-						<a href="#"><img id="Arsenal" src="./images/West Ham.png" alt="Icon of West Ham"></a>
-				
-					</div>
-					<div id="team_name">
-						<p id="Leicester">Leicester City</p>
-						<p id="away_west">West Ham</p>
-					</div>
-					<div>
-						<button id="win_button1" onclick="chooseWin()">Home Win</button>
-						<button id="draw_button1" onclick="chooseDraw()">Draw</button>
-						<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
-					</div>
-					<div class="odds">
-						<p class = "spec_odds_home"></p>
-						<p class = "spec_odds_draw"></p>
-						<p class = "spec_odds_away"></p>
-					</div>
-					<div id="betting_amount">
-						<form action="" method="post">
-							<label for="amount">Amount</label>
-							<Input type="number" class="AmountControl" id="Amount_for_betting_Leicester" name="betting_amount"><br>
-							<button id="submit_button" type="button" value="button" onclick="submitStat_Leicester()">Submit</button>
-							<button id="reset_button" type="reset" value="Reset">Reset</button>
-						</form>
-						<!--<input type="submit" id="submit_icon" value="Submit">-->
-					</div>
-
-					<div id="betting_table">
-						<a href="#"><img id="Liverpool" src="./images/Arsenal.png" alt="Icon of Arsenal"></a>
-						<a href="#"><img id="Arsenal" src="./images/Wolverhampton Wanderers.png" alt="Icon of Wolverhampton Wanderers"></a>
-				
-					</div>
-					<div id="team_name">
-						<p id="home_Arsenal">Arsenal</p>
-						<p id="away_wovles">Wovles</p>
-					</div>
-					<div>
-						<button id="win_button1" onclick="chooseWin()">Home Win</button>
-						<button id="draw_button1" onclick="chooseDraw()">Draw</button>
-						<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
-					</div>
-					<div class="odds">
-						<p class = "spec_odds_home"></p>
-						<p class = "spec_odds_draw"></p>
-						<p class = "spec_odds_away"></p>
-					</div>
-					<div id="betting_amount">
-						<form action="" method="post">
-							<label for="amount">Amount</label>
-							<Input type="number" class="AmountControl" id="Amount_for_betting_Arsenal" name="betting_amount"><br>
-							<button id="submit_button" type="button" value="button" onclick="submitStat_Arsenal()">Submit</button>
-							<button id="reset_button" type="reset" value="Reset">Reset</button>
-						</form>
-						<!--<input type="submit" id="submit_icon" value="Submit">-->
-					</div>
-
-					<div id="betting_table">
-						<a href="#"><img id="Liverpool" src="./images/Southampton.png" alt="Icon of Southampton"></a>
-						<a href="#"><img id="Arsenal" src="./images/Liverpool.png" alt="Icon of Liverpool"></a>
-				
-					</div>
-					<div id="team_name">
-						<p id="Southampton">Southampton</p>
-						<p id="away_liverpool">Liverpool</p>
-					</div>
-					<div>
-						<button id="win_button1" onclick="chooseWin()">Home Win</button>
-						<button id="draw_button1" onclick="chooseDraw()">Draw</button>
-						<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
-					</div>
-					<div class="odds">
-						<p class = "spec_odds_home"></p>
-						<p class = "spec_odds_draw"></p>
-						<p class = "spec_odds_away"></p>
-					</div>
-					<div id="betting_amount">
-						<form action="" method="post">
-							<label for="amount">Amount</label>
-							<Input type="number" class="AmountControl" id="Amount_for_betting_Southampton" name="betting_amount"><br>
-							<button id="submit_button" type="button" value="button" onclick="submitStat_Southampton()">Submit</button>
-							<button id="reset_button" type="reset" value="Reset">Reset</button>
-						</form>
-						<!--<input type="submit" id="submit_icon" value="Submit">-->
-					</div>
-
-					<h5 class="mt-5 mb-3">Table Example:</h5>
-					<table class="table table-striped my-5">
-						<thead>
-							<tr>
-								<th scope="col">#</th>
-								<th scope="col">Betting type</th>
-								<th scope="col">Betting amount</th>
-								<th scope="col">Personal Security Code</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th scope="row">1</th>
-								<td>Home Win</td>
-								<td>50000</td>
-								<td>Irvine MCS</td>
-							</tr>
-							<tr>
-								<th scope="row">2</th>
-								<td>Draw</td>
-								<td>20</td>
-								<td>Fingal's Betting</td>
-							</tr>
-							<tr>
-								<th scope="row">3</th>
-								<td>Away Win</td>
-								<td>80</td>
-								<td>password</td>
-							</tr>
-						</tbody>
-					</table>
-
-
-					<h3 class="mt-5 mb-3">Video Tutor</h3>
-					<p>A simple tutor video for users to make sure that they would predict and bet more accurately after watching this video</p>
-
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/sqZas5u9dx8" frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
-					</div>
-
 				</div>
 
-				<nav class="blog-nav nav nav-justified my-5">
-					<a class="nav-link-prev nav-item nav-link rounded-left" href="index.html">Previous<i
-							class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
-					<a class="nav-link-next nav-item nav-link rounded-right" href="page.html">Next<i
-							class="arrow-next fas fa-long-arrow-alt-right"></i></a>
-				</nav>
-				<hr>
-				<div class="comments-wrapper">
+				<div id="betting_table">
+					<a href="#"><img id="Liverpool" src="./images/Everton.png" alt="Icon of Everton"></a>
+					<a href="#"><img id="Bournemouth_img" src="./images/AFC_Bournemouth.png" alt="Icon of Bournemouth"></a>
+
+				</div>
+				<div id="team_name">
+					<p id="Everton">Everton</p>
+					<p id="Bournemouth">Bournemouth</p>
+				</div>
+				<div>
+					<button id="win_button1" onclick="chooseWin()">Home Win</button>
+					<button id="draw_button1" onclick="chooseDraw()">Draw</button>
+					<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
+				</div>
+				<div class="odds">
+					<p class = "spec_odds_home"></p>
+					<p class = "spec_odds_draw"></p>
+					<p class = "spec_odds_away"></p>
+				</div>
+				<div id="betting_amount">
+					<form action="" method="post">
+						<label for="amount">Amount</label>
+						<Input type="number" class="AmountControl" id="Amount_for_betting_Everton" name="betting_amount"><br>
+						<button id="submit_button" type="button" value="button" onclick="submitStat_Everton()">Submit</button>
+						<button id="reset_button" type="reset" value="Reset">Reset</button>
+					</form>
+					<!--<input type="submit" id="submit_icon" value="Submit">-->
+				</div>
+
+				<div id="betting_table">
+					<a href="#"><img id="Liverpool" src="./images/Leeds United.png" alt="Icon of Leeds"></a>
+					<a href="#"><img id="Arsenal" src="./images/Tottenham Hotspur.png" alt="Icon of Tottenham"></a>
+
+				</div>
+				<div id="team_name">
+					<p id="Leeds">Leeds United</p>
+					<p id="Tottenham">Tottenham</p>
+				</div>
+				<div>
+					<button id="win_button1" onclick="chooseWin()">Home Win</button>
+					<button id="draw_button1" onclick="chooseDraw()">Draw</button>
+					<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
+				</div>
+				<div class="odds">
+					<p class = "spec_odds_home"></p>
+					<p class = "spec_odds_draw"></p>
+					<p class = "spec_odds_away"></p>
+				</div>
+				<div id="betting_amount">
+					<form action="" method="post">
+						<label for="amount">Amount</label>
+						<Input type="number" class="AmountControl" id="Amount_for_betting_Leeds" name="betting_amount"><br>
+						<button id="submit_button" type="button" value="button" onclick="submitStat_Leeds()">Submit</button>
+						<button id="reset_button" type="reset" value="Reset">Reset</button>
+					</form>
+					<!--<input type="submit" id="submit_icon" value="Submit">-->
+				</div>
+
+				<div id="betting_table">
+					<a href="#"><img id="Liverpool" src="./images/Manchester United.png" alt="Icon of Manchester United"></a>
+					<a href="#"><img id="Arsenal" src="./images/Fulham.png" alt="Icon of Fulham"></a>
+
+				</div>
+				<div id="team_name">
+					<p id="Man_United">Manchester United</p>
+					<p id="Fulham">Fulham</p>
+				</div>
+				<div>
+					<button id="win_button1" onclick="chooseWin()">Home Win</button>
+					<button id="draw_button1" onclick="chooseDraw()">Draw</button>
+					<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
+				</div>
+				<div class="odds">
+					<p class = "spec_odds_home"></p>
+					<p class = "spec_odds_draw"></p>
+					<p class = "spec_odds_away"></p>
+				</div>
+				<div id="betting_amount">
+					<form action="" method="post">
+						<label for="amount">Amount</label>
+						<Input type="number" class="AmountControl" id="Amount_for_betting_United" name="betting_amount"><br>
+						<button id="submit_button" type="button" value="button" onclick="submitStat_United()">Submit</button>
+						<button id="reset_button" type="reset" value="Reset">Reset</button>
+					</form>
+					<!--<input type="submit" id="submit_icon" value="Submit">-->
+				</div>
+
+				<div id="betting_table">
+					<a href="#"><img id="Liverpool" src="./images/Chelsea.png" alt="Icon of Chelsea"></a>
+					<a href="#"><img id="Arsenal" src="./images/Newcastle United.png" alt="Icon of Newcastle United"></a>
+
+				</div>
+				<div id="team_name">
+					<p id="Chelsea">Chelsea</p>
+					<p id="away_newcastle">Newcastle United</p>
+				</div>
+				<div>
+					<button id="win_button1" onclick="chooseWin()">Home Win</button>
+					<button id="draw_button1" onclick="chooseDraw()">Draw</button>
+					<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
+				</div>
+				<div class="odds">
+					<p class = "spec_odds_home"></p>
+					<p class = "spec_odds_draw"></p>
+					<p class = "spec_odds_away"></p>
+				</div>
+				<div id="betting_amount">
+					<form action="" method="post">
+						<label for="amount">Amount</label>
+						<Input type="number" class="AmountControl" id="Amount_for_betting_Chelsea" name="betting_amount"><br>
+						<button id="submit_button" type="button" value="button" onclick="submitStat_Chelsea()">Submit</button>
+						<button id="reset_button" type="reset" value="Reset">Reset</button>
+					</form>
+					<!--<input type="submit" id="submit_icon" value="Submit">-->
+				</div>
+
+				<div id="betting_table">
+					<a href="#"><img id="Liverpool" src="./images/Leicester City.png" alt="Icon of Leicester City"></a>
+					<a href="#"><img id="Arsenal" src="./images/West Ham.png" alt="Icon of West Ham"></a>
+
+				</div>
+				<div id="team_name">
+					<p id="Leicester">Leicester City</p>
+					<p id="away_west">West Ham</p>
+				</div>
+				<div>
+					<button id="win_button1" onclick="chooseWin()">Home Win</button>
+					<button id="draw_button1" onclick="chooseDraw()">Draw</button>
+					<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
+				</div>
+				<div class="odds">
+					<p class = "spec_odds_home"></p>
+					<p class = "spec_odds_draw"></p>
+					<p class = "spec_odds_away"></p>
+				</div>
+				<div id="betting_amount">
+					<form action="" method="post">
+						<label for="amount">Amount</label>
+						<Input type="number" class="AmountControl" id="Amount_for_betting_Leicester" name="betting_amount"><br>
+						<button id="submit_button" type="button" value="button" onclick="submitStat_Leicester()">Submit</button>
+						<button id="reset_button" type="reset" value="Reset">Reset</button>
+					</form>
+					<!--<input type="submit" id="submit_icon" value="Submit">-->
+				</div>
+
+				<div id="betting_table">
+					<a href="#"><img id="Liverpool" src="./images/Arsenal.png" alt="Icon of Arsenal"></a>
+					<a href="#"><img id="Arsenal" src="./images/Wolverhampton Wanderers.png" alt="Icon of Wolverhampton Wanderers"></a>
+
+				</div>
+				<div id="team_name">
+					<p id="home_Arsenal">Arsenal</p>
+					<p id="away_wovles">Wovles</p>
+				</div>
+				<div>
+					<button id="win_button1" onclick="chooseWin()">Home Win</button>
+					<button id="draw_button1" onclick="chooseDraw()">Draw</button>
+					<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
+				</div>
+				<div class="odds">
+					<p class = "spec_odds_home"></p>
+					<p class = "spec_odds_draw"></p>
+					<p class = "spec_odds_away"></p>
+				</div>
+				<div id="betting_amount">
+					<form action="" method="post">
+						<label for="amount">Amount</label>
+						<Input type="number" class="AmountControl" id="Amount_for_betting_Arsenal" name="betting_amount"><br>
+						<button id="submit_button" type="button" value="button" onclick="submitStat_Arsenal()">Submit</button>
+						<button id="reset_button" type="reset" value="Reset">Reset</button>
+					</form>
+					<!--<input type="submit" id="submit_icon" value="Submit">-->
+				</div>
+
+				<div id="betting_table">
+					<a href="#"><img id="Liverpool" src="./images/Southampton.png" alt="Icon of Southampton"></a>
+					<a href="#"><img id="Arsenal" src="./images/Liverpool.png" alt="Icon of Liverpool"></a>
+
+				</div>
+				<div id="team_name">
+					<p id="Southampton">Southampton</p>
+					<p id="away_liverpool">Liverpool</p>
+				</div>
+				<div>
+					<button id="win_button1" onclick="chooseWin()">Home Win</button>
+					<button id="draw_button1" onclick="chooseDraw()">Draw</button>
+					<button id="loss_button1" onclick="chooseLoss()">Away Win</button>
+				</div>
+				<div class="odds">
+					<p class = "spec_odds_home"></p>
+					<p class = "spec_odds_draw"></p>
+					<p class = "spec_odds_away"></p>
+				</div>
+				<div id="betting_amount">
+					<form action="" method="post">
+						<label for="amount">Amount</label>
+						<Input type="number" class="AmountControl" id="Amount_for_betting_Southampton" name="betting_amount"><br>
+						<button id="submit_button" type="button" value="button" onclick="submitStat_Southampton()">Submit</button>
+						<button id="reset_button" type="reset" value="Reset">Reset</button>
+					</form>
+					<!--<input type="submit" id="submit_icon" value="Submit">-->
+				</div>
+
+				<h5 class="mt-5 mb-3">Table Example:</h5>
+				<table class="table table-striped my-5">
+					<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">Betting type</th>
+						<th scope="col">Betting amount</th>
+						<th scope="col">Personal Security Code</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td>Home Win</td>
+						<td>50000</td>
+						<td>Irvine MCS</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>Draw</td>
+						<td>20</td>
+						<td>Fingal's Betting</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>Away Win</td>
+						<td>80</td>
+						<td>password</td>
+					</tr>
+					</tbody>
+				</table>
 
 
-					<div class="comments" id="comments">
+				<h3 class="mt-5 mb-3">Video Tutor</h3>
+				<p>A simple tutor video for users to make sure that they would predict and bet more accurately after watching this video</p>
+
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/sqZas5u9dx8" frameborder="0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+				</div>
+
+			</div>
+
+			<nav class="blog-nav nav nav-justified my-5">
+				<a class="nav-link-prev nav-item nav-link rounded-left" href="index.html">Previous<i
+						class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
+				<a class="nav-link-next nav-item nav-link rounded-right" href="page.html">Next<i
+						class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+			</nav>
+			<hr>
+			<div class="comments-wrapper">
 
 
-						<div class="comments-header">
-
-							<h2 class="comment-reply-title">
-								3 replies on “Betting Site” </h2><!-- .comments-title -->
-
-						</div><!-- .comments-header -->
-
-						<div class="comments-inner">
-
-							<div id="comment-1" class="comment even thread-even depth-1 parent">
-								<article id="div-comment-1" class="comment-body">
-									<footer class="comment-meta">
-										<div class="comment-author vcard">
-											<a href="https://wordpress.org/" rel="external nofollow" class="url"><img
-													alt=""
-													src="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=120&amp;d=mm&amp;r=g"
-													class="avatar avatar-120 photo" height="120" width="120"><span
-													class="fn">A WordPress Commenter</span><span
-													class="says sr-only">says:</span></a> </div>
-										<!-- .comment-author -->
-
-										<div class="comment-metadata">
-											<a href="http://wordpress.mac/?p=1#comment-1">
-												<time datetime="2023-04-25T20:07:51+00:00"
-													title="April 25, 2023 at 8:07 pm">
-													April 25, 2023 at 8:07 pm </time>
-											</a>
-											
-										</div><!-- .comment-metadata -->
-
-									</footer><!-- .comment-meta -->
-
-									<div class="comment-content entry-content">
-
-										<p>Hi, this is a comment.<br>
-											To get started with moderating, editing, and deleting comments, please visit
-											the Comments screen in the dashboard.<br>
-											Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.</p>
-
-									</div><!-- .comment-content -->
+				<div class="comments" id="comments">
 
 
-									<footer class="comment-footer-meta">
+					<div class="comments-header">
+
+						<h2 class="comment-reply-title">
+							3 replies on “Betting Site” </h2><!-- .comments-title -->
+
+					</div><!-- .comments-header -->
+
+					<div class="comments-inner">
+
+						<div id="comment-1" class="comment even thread-even depth-1 parent">
+							<article id="div-comment-1" class="comment-body">
+								<footer class="comment-meta">
+									<div class="comment-author vcard">
+										<a href="https://wordpress.org/" rel="external nofollow" class="url"><img
+												alt=""
+												src="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=120&amp;d=mm&amp;r=g"
+												class="avatar avatar-120 photo" height="120" width="120"><span
+												class="fn">A WordPress Commenter</span><span
+												class="says sr-only">says:</span></a> </div>
+									<!-- .comment-author -->
+
+									<div class="comment-metadata">
+										<a href="http://wordpress.mac/?p=1#comment-1">
+											<time datetime="2023-04-25T20:07:51+00:00"
+												  title="April 25, 2023 at 8:07 pm">
+												April 25, 2023 at 8:07 pm </time>
+										</a>
+
+									</div><!-- .comment-metadata -->
+
+								</footer><!-- .comment-meta -->
+
+								<div class="comment-content entry-content">
+
+									<p>Hi, this is a comment.<br>
+										To get started with moderating, editing, and deleting comments, please visit
+										the Comments screen in the dashboard.<br>
+										Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.</p>
+
+								</div><!-- .comment-content -->
+
+
+								<footer class="comment-footer-meta">
 
 										<span class="comment-reply"><a rel="nofollow"
-												class="do-not-scroll comment-reply-link"
-												href="http://wordpress.mac/?p=1&amp;replytocom=1#respond"
-												data-commentid="1" data-postid="1" data-belowelement="div-comment-1"
-												data-respondelement="respond"
-												aria-label="Reply to A WordPress Commenter">Reply</a></span>
-									</footer>
+																	   class="do-not-scroll comment-reply-link"
+																	   href="http://wordpress.mac/?p=1&amp;replytocom=1#respond"
+																	   data-commentid="1" data-postid="1" data-belowelement="div-comment-1"
+																	   data-respondelement="respond"
+																	   aria-label="Reply to A WordPress Commenter">Reply</a></span>
+								</footer>
 
 
-								</article><!-- .comment-body -->
+							</article><!-- .comment-body -->
 
-								<div id="comment-2"
-									class="comment byuser comment-author-Fingal bypostauthor odd alt depth-2">
-									<article id="div-comment-2" class="comment-body">
-										<footer class="comment-meta">
-											<div class="comment-author vcard">
-												<img alt=""
-													src="http://2.gravatar.com/avatar/e297925dbb035adc0b67aa14da4dcc0a?s=120&amp;d=mm&amp;r=g"
-													class="avatar avatar-120 photo" height="120" width="120"><span
-													class="fn">Fingal</span><span
-													class="says sr-only">says:</span> </div>
-											<!-- .comment-author -->
-
-											<div class="comment-metadata">
-												<a href="http://wordpress.mac/?p=1#comment-2">
-													<time datetime="2023-04-25T20:08:58+00:00"
-														title="April 25, 2023 at 8:08 pm">
-														April 25, 2023 at 8:08 pm </time>
-												</a>												
-											</div><!-- .comment-metadata -->
-
-										</footer><!-- .comment-meta -->
-
-										<div class="comment-content entry-content">
-
-											<p>test reply</p>
-
-										</div><!-- .comment-content -->
-
-
-										<footer class="comment-footer-meta">
-
-											<span class="comment-reply"><a rel="nofollow"
-													class="do-not-scroll comment-reply-link"
-													href="http://wordpress.mac/?p=1&amp;replytocom=2#respond"
-													data-commentid="2" data-postid="1" data-belowelement="div-comment-2"
-													data-respondelement="respond"
-													aria-label="Reply to Fingal">Reply</a></span><span
-												class="by-post-author">By Post Author</span>
-										</footer>
-
-
-									</article><!-- .comment-body -->
-
-								</div><!-- #comment-## -->
-							</div><!-- #comment-## -->
-							<div id="comment-3"
-								class="comment byuser comment-author-Fingal bypostauthor even thread-odd thread-alt depth-1">
-								<article id="div-comment-3" class="comment-body">
+							<div id="comment-2"
+								 class="comment byuser comment-author-Fingal bypostauthor odd alt depth-2">
+								<article id="div-comment-2" class="comment-body">
 									<footer class="comment-meta">
 										<div class="comment-author vcard">
 											<img alt=""
-												src="http://2.gravatar.com/avatar/e297925dbb035adc0b67aa14da4dcc0a?s=120&amp;d=mm&amp;r=g"
-												class="avatar avatar-120 photo" height="120" width="120"><span
+												 src="http://2.gravatar.com/avatar/e297925dbb035adc0b67aa14da4dcc0a?s=120&amp;d=mm&amp;r=g"
+												 class="avatar avatar-120 photo" height="120" width="120"><span
 												class="fn">Fingal</span><span
 												class="says sr-only">says:</span> </div>
 										<!-- .comment-author -->
 
 										<div class="comment-metadata">
-											<a href="http://wordpress.mac/?p=1#comment-3">
-												<time datetime="2023-04-25T20:09:31+00:00"
-													title="April 25, 2023 at 8:09 pm">
-													April 25, 2023 at 8:09 pm </time>
+											<a href="http://wordpress.mac/?p=1#comment-2">
+												<time datetime="2023-04-25T20:08:58+00:00"
+													  title="April 25, 2023 at 8:08 pm">
+													April 25, 2023 at 8:08 pm </time>
 											</a>
-											<span aria-hidden="true">•</span>
 										</div><!-- .comment-metadata -->
 
 									</footer><!-- .comment-meta -->
 
 									<div class="comment-content entry-content">
 
-										<p>Comment</p>
+										<p>test reply</p>
 
 									</div><!-- .comment-content -->
 
 
 									<footer class="comment-footer-meta">
 
-										<span class="comment-reply"><a rel="nofollow"
-												class="do-not-scroll comment-reply-link"
-												href="http://wordpress.mac/?p=1&amp;replytocom=3#respond"
-												data-commentid="3" data-postid="1" data-belowelement="div-comment-3"
-												data-respondelement="respond"
-												aria-label="Reply to Fingal">Reply</a></span><span
+											<span class="comment-reply"><a rel="nofollow"
+																		   class="do-not-scroll comment-reply-link"
+																		   href="http://wordpress.mac/?p=1&amp;replytocom=2#respond"
+																		   data-commentid="2" data-postid="1" data-belowelement="div-comment-2"
+																		   data-respondelement="respond"
+																		   aria-label="Reply to Fingal">Reply</a></span><span
 											class="by-post-author">By Post Author</span>
 									</footer>
 
@@ -566,49 +492,95 @@
 								</article><!-- .comment-body -->
 
 							</div><!-- #comment-## -->
+						</div><!-- #comment-## -->
+						<div id="comment-3"
+							 class="comment byuser comment-author-Fingal bypostauthor even thread-odd thread-alt depth-1">
+							<article id="div-comment-3" class="comment-body">
+								<footer class="comment-meta">
+									<div class="comment-author vcard">
+										<img alt=""
+											 src="http://2.gravatar.com/avatar/e297925dbb035adc0b67aa14da4dcc0a?s=120&amp;d=mm&amp;r=g"
+											 class="avatar avatar-120 photo" height="120" width="120"><span
+											class="fn">Fingal</span><span
+											class="says sr-only">says:</span> </div>
+									<!-- .comment-author -->
 
-						</div><!-- .comments-inner -->
+									<div class="comment-metadata">
+										<a href="http://wordpress.mac/?p=1#comment-3">
+											<time datetime="2023-04-25T20:09:31+00:00"
+												  title="April 25, 2023 at 8:09 pm">
+												April 25, 2023 at 8:09 pm </time>
+										</a>
+										<span aria-hidden="true">•</span>
+									</div><!-- .comment-metadata -->
 
-					</div><!-- comments -->
+								</footer><!-- .comment-meta -->
 
-					<hr class="" aria-hidden="true">
-					<div id="respond" class="comment-respond">
-						<h2 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow"
-									id="cancel-comment-reply-link" href="/?p=1#respond" style="display:none;">Cancel
-									reply</a></small></h2>
-					</div><!-- #respond -->
+								<div class="comment-content entry-content">
 
-				</div>
+									<p>Comment</p>
+
+								</div><!-- .comment-content -->
+
+
+								<footer class="comment-footer-meta">
+
+										<span class="comment-reply"><a rel="nofollow"
+																	   class="do-not-scroll comment-reply-link"
+																	   href="http://wordpress.mac/?p=1&amp;replytocom=3#respond"
+																	   data-commentid="3" data-postid="1" data-belowelement="div-comment-3"
+																	   data-respondelement="respond"
+																	   aria-label="Reply to Fingal">Reply</a></span><span
+										class="by-post-author">By Post Author</span>
+								</footer>
+
+
+							</article><!-- .comment-body -->
+
+						</div><!-- #comment-## -->
+
+					</div><!-- .comments-inner -->
+
+				</div><!-- comments -->
+
+				<hr class="" aria-hidden="true">
+				<div id="respond" class="comment-respond">
+					<h2 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow"
+																							 id="cancel-comment-reply-link" href="/?p=1#respond" style="display:none;">Cancel
+						reply</a></small></h2>
+				</div><!-- #respond -->
 
 			</div>
-			<!--//container-->
-		</article>
+
+		</div>
+		<!--//container-->
+	</article>
 
 
 
 
-		<footer class="footer text-center py-2 theme-bg-dark">
+	<footer class="footer text-center py-2 theme-bg-dark">
 
-			<p class="copyright"><a href="https://www.youtube.com/premierleague">FollowLeague</a></p>
+		<p class="copyright"><a href="https://www.youtube.com/premierleague">FollowLeague</a></p>
 
-		</footer>
+	</footer>
 
-	</div>
-	<!--//main-wrapper-->
+</div>
+<!--//main-wrapper-->
 
 
-	<!-- Bootstrap Javascript -->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+<!-- Bootstrap Javascript -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
-	<script src="js/main.js"></script>
-	<script>
+</script>
+<script src="js/main.js"></script>
+<script>
 		const jwtoken = document.cookie.match(/jwt=([^;]+)/);
 		const out = document.cookie.match(/winorloss=(\w+)/);
 		const result = document.cookie.match(/authorization=(\w+)/);
