@@ -740,16 +740,17 @@ div.comment:first-of-type {
 }
 
 #Liverpool{
-    margin-left: 45%;
+    margin-left: 80%;
 }
 
 #Arsenal{
-    margin-left: 125%;
+    margin-left: 136%;
 }
 
 #betting_table {
     display: flex;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #team_name{
@@ -764,6 +765,7 @@ div.comment:first-of-type {
 #away_team, #away_liverpool, #away_wovles, #away_west, #away_newcastle{
     padding-left: 21%;
     padding-right: 15%;
+    color: #ee0dea;
 }
 
 #win_button{
@@ -771,8 +773,8 @@ div.comment:first-of-type {
     color: white;
     font-family: "Times New Roman", Times, serif;
     font-size: 30px;
-    margin-left: 18%;
-    margin-right: 7%;
+    margin-left: 25.7%;
+    margin-right: 5%;
     border: none;
     border-radius: 5px;
     border: 2px solid #4CAF50;
@@ -783,10 +785,10 @@ div.comment:first-of-type {
     color: white;
     font-family: "Times New Roman", Times, serif;
     font-size: 30px;
-    margin-left: 14%;
-    margin-right: 6%;
+    margin-left: 22.5%;
+    margin-right: 1%;
     border: none;
-    border-radius: 5px;
+    border-radius: 40px;
     border: 2px solid #4CAF50;
 }
 
@@ -795,8 +797,8 @@ div.comment:first-of-type {
     color: white;
     font-family: "Times New Roman", Times, serif;
     font-size: 30px;
-    margin-left: 19%;
-    margin-right: 10%;
+    margin-left: 27.5%;
+    margin-right: 3.8%;
     border: none;
     border-radius: 5px;
     border: 2px solid #4CAF50;
@@ -808,7 +810,7 @@ div.comment:first-of-type {
     font-family: "Times New Roman", Times, serif;
     font-size: 30px;
     margin-left: 3%;
-    margin-right: 10%;
+    margin-right: 6.8%;
     border: none;
     border-radius: 5px;
     border: 2px solid #4CAF50;
@@ -819,10 +821,10 @@ div.comment:first-of-type {
     color: white;
     font-family: "Times New Roman", Times, serif;
     font-size: 30px;
-    margin-left: 1.5%;
-    margin-right: 6%;
+    margin-left: 3.5%;
+    margin-right: 2.5%;
     border: none;
-    border-radius: 5px;
+    border-radius: 40px;
     border: 2px solid #4CAF50;
 }
 
@@ -846,7 +848,7 @@ div.comment:first-of-type {
     margin-left: 2%;
     margin-right: 10%;
     border: none;
-    border-radius: 5px;
+    border-radius: 40px;
     border: 2px solid #4CAF50;
 }
 
@@ -1089,21 +1091,25 @@ div.comment:first-of-type {
 }
 
 #Villa{
-    padding-left: 18%;
-    padding-right: 15%;
+    padding-left: 26%;
+    padding-right: 13%;
+    color: #ee0dea;
 }
 
 #Brighton{
-    padding-left: 19%;
+    padding-left: 15.5%;
+    color: #ee0dea;
 }
 
 #Everton{
-    padding-left: 19.5%;
-    padding-right: 15%;
+    padding-left: 27.5%;
+    padding-right: 7.3%;
+    color: #ee0dea;
 }
 
 #Bournemouth{
     padding-left: 19%;
+    color: #ee0dea;
 }
 
 #Bournemouth_img{
@@ -1115,33 +1121,55 @@ div.comment:first-of-type {
 }
 
 #Leeds{
-    padding-left: 16.7%;
-    padding-right: 32%;
+    padding-left: 25%;
+    padding-right: 26.5%;
+    color: #ee0dea;
 }
 
 #Man_United{
-    padding-left: 14%;
-    padding-right: 30%;
+    padding-left: 22%;
+    padding-right: 25.3%;
+    color: #ee0dea;
 }
 
 #Chelsea{
-    padding-left: 19%;
-    padding-right: 10.5%;
+    padding-left: 27%;
+    padding-right: 5%;
+    color: #ee0dea;
 }
 
 #Leicester{
-    padding-left: 16.8%;
-    padding-right: 10.8%;
+    padding-left: 25%;
+    padding-right: 5.5%;
+    color: #ee0dea;
 }
 
 #home_Arsenal{
-    padding-left: 19.2%;
-    padding-right: 16%;
+    padding-left: 27.8%;
+    padding-right: 9.5%;
+    color: #ee0dea;
 }
 
 #Southampton{
-    padding-left: 16.5%;
-    padding-right: 11%;
+    padding-left: 24.5%;
+    padding-right: 6%;
+    color: #ee0dea;
+}
+
+#Fulham{
+    color: #ee0dea;
+}
+
+#away_newcastle{
+    color: #ee0dea;
+}
+
+#away_newcastle{
+    color: #ee0dea;
+}
+
+#Tottenham{
+    color: #ee0dea;
 }
 
 #warning-message{
@@ -1181,6 +1209,89 @@ div.comment:first-of-type {
 }
 
 .betting_table_sum{
-    background: url(720.jpg);
+    background: url(bg.png);
     background-size: cover;
+}
+
+.betting_table_sum1{
+    background: url(bg1.png);
+    background-size: cover;
+}
+
+.betting_table_sum2{
+    background: url(bg2.png);
+    background-size: cover;
+}
+
+.betting_table_sum3{
+    background: url(bg3.png);
+    background-size: cover;
+}
+
+.betting_table_sum4{
+    background: url(pg4.png);
+    background-size: cover;
+}
+
+.betting_table_sum5{
+    background: url(bg5.png);
+    background-size: cover;
+}
+
+.betting_table_sum6{
+    background: url(bg6.png);
+    background-size: cover;
+}
+
+.betting_table_sum7{
+    background: url(bg7.png);
+    background-size: cover;
+}
+
+.label_type{
+    color: #fdfcfd;
+    background-color: #ee0dea;
+    background-size: 78px,88px;
+    border-radius: 45%;
+}
+
+#submit_button{
+    margin-top: 20px;
+    background-color:rgb(19, 113, 167);
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid #4CAF50;
+}
+
+#reset_button{
+    margin-left: 150px;
+    background-color:rgb(19, 113, 167);
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid #4CAF50;
+}
+
+#submit_button:hover {
+    cursor: pointer;
+    background-color: #1306c7;
+    transform: matrix(1.1);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#reset_button:hover {
+    cursor: pointer;
+    background-color: #1306c7;
+    transform: matrix(1.1);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.AmountControl{
+    margin-left: 15px;
+    border-radius: 100px;
 }

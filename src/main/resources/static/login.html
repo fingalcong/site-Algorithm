@@ -184,6 +184,8 @@
         const result = document.cookie.match(/authorization=(\w+)/);
         if(result[1] == 'success'){
             var login_info = document.getElementById('login_form');
+            var log_message = document.getElementById('login-page');
+            log_message.innerText = 'Log Out';
             login_info.innerHTML = '';
             var h3 = document.createElement('h3');
             h3.innerText = 'You have already logged in. Return to home page in 3 seconds.';

@@ -101,236 +101,252 @@
 					<p>The above one is the picture for the matches in next week. We will update the betting games once a week and to let users bet on the games for next week </p>
 
 					<h3 class="mt-5 mb-3">Corner Betting</h3>
-					<div id="betting_table">
-						<a href="#"><img id="Liverpool" src="./images/Aston Villa.png" alt="Icon of Aston Villa"></a>
-						<a href="#"><img id="Arsenal" src="./images/Brighton & Hove Albion.png" alt="Icon of Brighton"></a>
-				
-					</div>
-					<div id="team_name">
-						<p id="Villa">Aston Villa</p>
-						<p id="Brighton">Brighton</p>
-					</div>
-					<div>
-						<button id="win_button" onclick="chooseHome()">Home</button>
-						<button id="draw_button" onclick="chooseSame()">Same</button>
-						<button id="loss_button" onclick="chooseAway()">Away</button>
-					</div>
-					<div class="odds">
-						<p class = "spec_odds_home"></p>
-						<p class = "spec_odds_draw"></p>
-						<p class = "spec_odds_away"></p>
-					</div>
-					<div id="betting_amount">
-						<form action="" method="post">
-							<label for="amount">Amount</label>
-							<Input type="number" class="AmountControl" id="Amount_for_Corner_Villa" name="betting_amount"><br>
-							<button id="submit_button" type="button" value="button" onclick="submitCorner_Villa()">Submit</button>
-							<button id="reset_button" type="reset" value="Reset">Reset</button>
-						</form>
-						<!--<input type="submit" id="submit_icon" value="Submit">-->
-					</div>
-
-					<div id="betting_table">
-						<a href="#"><img id="Liverpool" src="./images/Everton.png" alt="Icon of Everton"></a>
-						<a href="#"><img id="Bournemouth_img" src="./images/AFC_Bournemouth.png" alt="Icon of Bournemouth"></a>
-				
-					</div>
-					<div id="team_name">
-						<p id="Everton">Everton</p>
-						<p id="Bournemouth">Bournemouth</p>
-					</div>
-					<div>
-						<button id="win_button" onclick="chooseHome()">Home</button>
-						<button id="draw_button" onclick="chooseSame()">Same</button>
-						<button id="loss_button" onclick="chooseAway()">Away</button>
-					</div>
-					<div class="odds">
-						<p class = "spec_odds_home"></p>
-						<p class = "spec_odds_draw"></p>
-						<p class = "spec_odds_away"></p>
-					</div>
-					<div id="betting_amount">
-						<form action="" method="post">
-							<label for="amount">Amount</label>
-							<Input type="number" class="AmountControl" id="Amount_for_Corner_Everton" name="betting_amount"><br>
-							<button id="submit_button" type="button" value="button" onclick="submitCorner_Everton()">Submit</button>
-							<button id="reset_button" type="reset" value="Reset">Reset</button>
-						</form>
-						<!--<input type="submit" id="submit_icon" value="Submit">-->
+					<div class="betting_table_sum">
+						<div id="betting_table">
+							<a href="#"><img id="Liverpool" src="./images/Aston Villa.png" alt="Icon of Aston Villa"></a>
+							<a href="#"><img id="Arsenal" src="./images/Brighton & Hove Albion.png" alt="Icon of Brighton"></a>
+					
+						</div>
+						<div id="team_name">
+							<p id="Villa">Aston Villa</p>
+							<p id="Brighton">Brighton</p>
+						</div>
+						<div>
+							<button id="win_button" onclick="chooseHome()">Home</button>
+							<button id="draw_button" onclick="chooseSame()">Same</button>
+							<button id="loss_button" onclick="chooseAway()">Away</button>
+						</div>
+						<div class="odds">
+							<p class = "spec_odds_home"></p>
+							<p class = "spec_odds_draw"></p>
+							<p class = "spec_odds_away"></p>
+						</div>
+						<div id="betting_amount">
+							<form action="" method="post">
+								<label class="label_type" class="label_type" for="amount">Amount</label>
+								<Input type="number" class="AmountControl" id="Amount_for_Corner_Villa" name="betting_amount"><br>
+								<button id="submit_button" type="button" value="button" onclick="submitCorner_Villa()">Submit</button>
+								<button id="reset_button" type="reset" value="Reset">Reset</button>
+							</form>
+							<!--<input type="submit" id="submit_icon" value="Submit">-->
+						</div>
 					</div>
 
-					<div id="betting_table">
-						<a href="#"><img id="Liverpool" src="./images/Leeds United.png" alt="Icon of Leeds"></a>
-						<a href="#"><img id="Arsenal" src="./images/Tottenham Hotspur.png" alt="Icon of Tottenham"></a>
-				
-					</div>
-					<div id="team_name">
-						<p id="Leeds">Leeds United</p>
-						<p id="Tottenham">Tottenham</p>
-					</div>
-					<div>
-						<button id="win_button" onclick="chooseHome()">Home</button>
-						<button id="draw_button" onclick="chooseSame()">Same</button>
-						<button id="loss_button" onclick="chooseAway()">Away</button>
-					</div>
-					<div class="odds">
-						<p class = "spec_odds_home"></p>
-						<p class = "spec_odds_draw"></p>
-						<p class = "spec_odds_away"></p>
-					</div>
-					<div id="betting_amount">
-						<form action="" method="post">
-							<label for="amount">Amount</label>
-							<Input type="number" class="AmountControl" id="Amount_for_Corner_Leeds" name="betting_amount"><br>
-							<button id="submit_button" type="button" value="button" onclick="submitCorner_Leeds()">Submit</button>
-							<button id="reset_button" type="reset" value="Reset">Reset</button>
-						</form>
-						<!--<input type="submit" id="submit_icon" value="Submit">-->
-					</div>
-
-					<div id="betting_table">
-						<a href="#"><img id="Liverpool" src="./images/Manchester United.png" alt="Icon of Manchester United"></a>
-						<a href="#"><img id="Arsenal" src="./images/Fulham.png" alt="Icon of Fulham"></a>
-				
-					</div>
-					<div id="team_name">
-						<p id="Man_United">Manchester United</p>
-						<p id="Fulham">Fulham</p>
-					</div>
-					<div>
-						<button id="win_button" onclick="chooseHome()">Home</button>
-						<button id="draw_button" onclick="chooseSame()">Same</button>
-						<button id="loss_button" onclick="chooseAway()">Away</button>
-					</div>
-					<div class="odds">
-						<p class = "spec_odds_home"></p>
-						<p class = "spec_odds_draw"></p>
-						<p class = "spec_odds_away"></p>
-					</div>
-					<div id="betting_amount">
-						<form action="" method="post">
-							<label for="amount">Amount</label>
-							<Input type="number" class="AmountControl" id="Amount_for_Corner_United" name="betting_amount"><br>
-							<button id="submit_button" type="button" value="button" onclick="submitCorner_United()">Submit</button>
-							<button id="reset_button" type="reset" value="Reset">Reset</button>
-						</form>
-						<!--<input type="submit" id="submit_icon" value="Submit">-->
+					<div class="betting_table_sum1">
+						<div id="betting_table">
+							<a href="#"><img id="Liverpool" src="./images/Everton.png" alt="Icon of Everton"></a>
+							<a href="#"><img id="Bournemouth_img" src="./images/AFC_Bournemouth.png" alt="Icon of Bournemouth"></a>
+					
+						</div>
+						<div id="team_name">
+							<p id="Everton">Everton</p>
+							<p id="Bournemouth">Bournemouth</p>
+						</div>
+						<div>
+							<button id="win_button" onclick="chooseHome()">Home</button>
+							<button id="draw_button" onclick="chooseSame()">Same</button>
+							<button id="loss_button" onclick="chooseAway()">Away</button>
+						</div>
+						<div class="odds">
+							<p class = "spec_odds_home"></p>
+							<p class = "spec_odds_draw"></p>
+							<p class = "spec_odds_away"></p>
+						</div>
+						<div id="betting_amount">
+							<form action="" method="post">
+								<label class="label_type" class="label_type" for="amount">Amount</label>
+								<Input type="number" class="AmountControl" id="Amount_for_Corner_Everton" name="betting_amount"><br>
+								<button id="submit_button" type="button" value="button" onclick="submitCorner_Everton()">Submit</button>
+								<button id="reset_button" type="reset" value="Reset">Reset</button>
+							</form>
+							<!--<input type="submit" id="submit_icon" value="Submit">-->
+						</div>
 					</div>
 
-					<div id="betting_table">
-						<a href="#"><img id="Liverpool" src="./images/Chelsea.png" alt="Icon of Chelsea"></a>
-						<a href="#"><img id="Arsenal" src="./images/Newcastle United.png" alt="Icon of Newcastle United"></a>
-				
-					</div>
-					<div id="team_name">
-						<p id="Chelsea">Chelsea</p>
-						<p id="away_newcastle">Newcastle United</p>
-					</div>
-					<div>
-						<button id="win_button" onclick="chooseHome()">Home</button>
-						<button id="draw_button" onclick="chooseSame()">Same</button>
-						<button id="loss_button" onclick="chooseAway()">Away</button>
-					</div>
-					<div class="odds">
-						<p class = "spec_odds_home"></p>
-						<p class = "spec_odds_draw"></p>
-						<p class = "spec_odds_away"></p>
-					</div>
-					<div id="betting_amount">
-						<form action="" method="post">
-							<label for="amount">Amount</label>
-							<Input type="number" class="AmountControl" id="Amount_for_Corner_Chelsea" name="betting_amount"><br>
-							<button id="submit_button" type="button" value="button" onclick="submitCorner_Chelsea()">Submit</button>
-							<button id="reset_button" type="reset" value="Reset">Reset</button>
-						</form>
-						<!--<input type="submit" id="submit_icon" value="Submit">-->
-					</div>
-
-					<div id="betting_table">
-						<a href="#"><img id="Liverpool" src="./images/Leicester City.png" alt="Icon of Leicester City"></a>
-						<a href="#"><img id="Arsenal" src="./images/West Ham.png" alt="Icon of West Ham"></a>
-				
-					</div>
-					<div id="team_name">
-						<p id="Leicester">Leicester City</p>
-						<p id="away_west">West Ham</p>
-					</div>
-					<div>
-						<button id="win_button" onclick="chooseHome()">Home</button>
-						<button id="draw_button" onclick="chooseSame()">Same</button>
-						<button id="loss_button" onclick="chooseAway()">Away</button>
-					</div>
-					<div class="odds">
-						<p class = "spec_odds_home"></p>
-						<p class = "spec_odds_draw"></p>
-						<p class = "spec_odds_away"></p>
-					</div>
-					<div id="betting_amount">
-						<form action="" method="post">
-							<label for="amount">Amount</label>
-							<Input type="number" class="AmountControl" id="Amount_for_Corner_Leicester" name="betting_amount"><br>
-							<button id="submit_button" type="button" value="button" onclick="submitCorner_Leicester()">Submit</button>
-							<button id="reset_button" type="reset" value="Reset">Reset</button>
-						</form>
-						<!--<input type="submit" id="submit_icon" value="Submit">-->
+					<div class="betting_table_sum2">
+						<div id="betting_table">
+							<a href="#"><img id="Liverpool" src="./images/Leeds United.png" alt="Icon of Leeds"></a>
+							<a href="#"><img id="Arsenal" src="./images/Tottenham Hotspur.png" alt="Icon of Tottenham"></a>
+					
+						</div>
+						<div id="team_name">
+							<p id="Leeds">Leeds United</p>
+							<p id="Tottenham">Tottenham</p>
+						</div>
+						<div>
+							<button id="win_button" onclick="chooseHome()">Home</button>
+							<button id="draw_button" onclick="chooseSame()">Same</button>
+							<button id="loss_button" onclick="chooseAway()">Away</button>
+						</div>
+						<div class="odds">
+							<p class = "spec_odds_home"></p>
+							<p class = "spec_odds_draw"></p>
+							<p class = "spec_odds_away"></p>
+						</div>
+						<div id="betting_amount">
+							<form action="" method="post">
+								<label class="label_type" class="label_type" for="amount">Amount</label>
+								<Input type="number" class="AmountControl" id="Amount_for_Corner_Leeds" name="betting_amount"><br>
+								<button id="submit_button" type="button" value="button" onclick="submitCorner_Leeds()">Submit</button>
+								<button id="reset_button" type="reset" value="Reset">Reset</button>
+							</form>
+							<!--<input type="submit" id="submit_icon" value="Submit">-->
+						</div>
 					</div>
 
-					<div id="betting_table">
-						<a href="#"><img id="Liverpool" src="./images/Arsenal.png" alt="Icon of Arsenal"></a>
-						<a href="#"><img id="Arsenal" src="./images/Wolverhampton Wanderers.png" alt="Icon of Wolverhampton Wanderers"></a>
-				
-					</div>
-					<div id="team_name">
-						<p id="home_Arsenal">Arsenal</p>
-						<p id="away_wovles">Wovles</p>
-					</div>
-					<div>
-						<button id="win_button" onclick="chooseHome()">Home</button>
-						<button id="draw_button" onclick="chooseSame()">Same</button>
-						<button id="loss_button" onclick="chooseAway()">Away</button>
-					</div>
-					<div class="odds">
-						<p class = "spec_odds_home"></p>
-						<p class = "spec_odds_draw"></p>
-						<p class = "spec_odds_away"></p>
-					</div>
-					<div id="betting_amount">
-						<form action="" method="post">
-							<label for="amount">Amount</label>
-							<Input type="number" class="AmountControl" id="Amount_for_Corner_Arsenal" name="betting_amount"><br>
-							<button id="submit_button" type="button" value="button" onclick="submitCorner_Arsenal()">Submit</button>
-							<button id="reset_button" type="reset" value="Reset">Reset</button>
-						</form>
-						<!--<input type="submit" id="submit_icon" value="Submit">-->
+					<div class="betting_table_sum3">
+						<div id="betting_table">
+							<a href="#"><img id="Liverpool" src="./images/Manchester United.png" alt="Icon of Manchester United"></a>
+							<a href="#"><img id="Arsenal" src="./images/Fulham.png" alt="Icon of Fulham"></a>
+					
+						</div>
+						<div id="team_name">
+							<p id="Man_United">Manchester United</p>
+							<p id="Fulham">Fulham</p>
+						</div>
+						<div>
+							<button id="win_button" onclick="chooseHome()">Home</button>
+							<button id="draw_button" onclick="chooseSame()">Same</button>
+							<button id="loss_button" onclick="chooseAway()">Away</button>
+						</div>
+						<div class="odds">
+							<p class = "spec_odds_home"></p>
+							<p class = "spec_odds_draw"></p>
+							<p class = "spec_odds_away"></p>
+						</div>
+						<div id="betting_amount">
+							<form action="" method="post">
+								<label class="label_type" class="label_type" for="amount">Amount</label>
+								<Input type="number" class="AmountControl" id="Amount_for_Corner_United" name="betting_amount"><br>
+								<button id="submit_button" type="button" value="button" onclick="submitCorner_United()">Submit</button>
+								<button id="reset_button" type="reset" value="Reset">Reset</button>
+							</form>
+							<!--<input type="submit" id="submit_icon" value="Submit">-->
+						</div>
 					</div>
 
-					<div id="betting_table">
-						<a href="#"><img id="Liverpool" src="./images/Southampton.png" alt="Icon of Southampton"></a>
-						<a href="#"><img id="Arsenal" src="./images/Liverpool.png" alt="Icon of Liverpool"></a>
-				
+					<div class="betting_table_sum4">
+						<div id="betting_table">
+							<a href="#"><img id="Liverpool" src="./images/Chelsea.png" alt="Icon of Chelsea"></a>
+							<a href="#"><img id="Arsenal" src="./images/Newcastle United.png" alt="Icon of Newcastle United"></a>
+					
+						</div>
+						<div id="team_name">
+							<p id="Chelsea">Chelsea</p>
+							<p id="away_newcastle">Newcastle United</p>
+						</div>
+						<div>
+							<button id="win_button" onclick="chooseHome()">Home</button>
+							<button id="draw_button" onclick="chooseSame()">Same</button>
+							<button id="loss_button" onclick="chooseAway()">Away</button>
+						</div>
+						<div class="odds">
+							<p class = "spec_odds_home"></p>
+							<p class = "spec_odds_draw"></p>
+							<p class = "spec_odds_away"></p>
+						</div>
+						<div id="betting_amount">
+							<form action="" method="post">
+								<label class="label_type" class="label_type" for="amount">Amount</label>
+								<Input type="number" class="AmountControl" id="Amount_for_Corner_Chelsea" name="betting_amount"><br>
+								<button id="submit_button" type="button" value="button" onclick="submitCorner_Chelsea()">Submit</button>
+								<button id="reset_button" type="reset" value="Reset">Reset</button>
+							</form>
+							<!--<input type="submit" id="submit_icon" value="Submit">-->
+						</div>
 					</div>
-					<div id="team_name">
-						<p id="Southampton">Southampton</p>
-						<p id="away_liverpool">Liverpool</p>
+
+					<div class="betting_table_sum5">
+						<div id="betting_table">
+							<a href="#"><img id="Liverpool" src="./images/Leicester City.png" alt="Icon of Leicester City"></a>
+							<a href="#"><img id="Arsenal" src="./images/West Ham.png" alt="Icon of West Ham"></a>
+					
+						</div>
+						<div id="team_name">
+							<p id="Leicester">Leicester City</p>
+							<p id="away_west">West Ham</p>
+						</div>
+						<div>
+							<button id="win_button" onclick="chooseHome()">Home</button>
+							<button id="draw_button" onclick="chooseSame()">Same</button>
+							<button id="loss_button" onclick="chooseAway()">Away</button>
+						</div>
+						<div class="odds">
+							<p class = "spec_odds_home"></p>
+							<p class = "spec_odds_draw"></p>
+							<p class = "spec_odds_away"></p>
+						</div>
+						<div id="betting_amount">
+							<form action="" method="post">
+								<label class="label_type" class="label_type" for="amount">Amount</label>
+								<Input type="number" class="AmountControl" id="Amount_for_Corner_Leicester" name="betting_amount"><br>
+								<button id="submit_button" type="button" value="button" onclick="submitCorner_Leicester()">Submit</button>
+								<button id="reset_button" type="reset" value="Reset">Reset</button>
+							</form>
+							<!--<input type="submit" id="submit_icon" value="Submit">-->
+						</div>
 					</div>
-					<div>
-						<button id="win_button" onclick="chooseHome()">Home</button>
-						<button id="draw_button" onclick="chooseSame()">Same</button>
-						<button id="loss_button" onclick="chooseAway()">Away</button>
+
+					<div class="betting_table_sum6">
+						<div id="betting_table">
+							<a href="#"><img id="Liverpool" src="./images/Arsenal.png" alt="Icon of Arsenal"></a>
+							<a href="#"><img id="Arsenal" src="./images/Wolverhampton Wanderers.png" alt="Icon of Wolverhampton Wanderers"></a>
+					
+						</div>
+						<div id="team_name">
+							<p id="home_Arsenal">Arsenal</p>
+							<p id="away_wovles">Wovles</p>
+						</div>
+						<div>
+							<button id="win_button" onclick="chooseHome()">Home</button>
+							<button id="draw_button" onclick="chooseSame()">Same</button>
+							<button id="loss_button" onclick="chooseAway()">Away</button>
+						</div>
+						<div class="odds">
+							<p class = "spec_odds_home"></p>
+							<p class = "spec_odds_draw"></p>
+							<p class = "spec_odds_away"></p>
+						</div>
+						<div id="betting_amount">
+							<form action="" method="post">
+								<label class="label_type" class="label_type" for="amount">Amount</label>
+								<Input type="number" class="AmountControl" id="Amount_for_Corner_Arsenal" name="betting_amount"><br>
+								<button id="submit_button" type="button" value="button" onclick="submitCorner_Arsenal()">Submit</button>
+								<button id="reset_button" type="reset" value="Reset">Reset</button>
+							</form>
+							<!--<input type="submit" id="submit_icon" value="Submit">-->
+						</div>
 					</div>
-					<div class="odds">
-						<p class = "spec_odds_home"></p>
-						<p class = "spec_odds_draw"></p>
-						<p class = "spec_odds_away"></p>
-					</div>
-					<div id="betting_amount">
-						<form action="" method="post">
-							<label for="amount">Amount</label>
-							<Input type="number" class="AmountControl" id="Amount_for_Corner_Southampton" name="betting_amount"><br>
-							<button id="submit_button" type="button" value="button" onclick="submitCorner_Southampton()">Submit</button>
-							<button id="reset_button" type="reset" value="Reset">Reset</button>
-						</form>
-						<!--<input type="submit" id="submit_icon" value="Submit">-->
+
+					<div class="betting_table_sum7">
+						<div id="betting_table">
+							<a href="#"><img id="Liverpool" src="./images/Southampton.png" alt="Icon of Southampton"></a>
+							<a href="#"><img id="Arsenal" src="./images/Liverpool.png" alt="Icon of Liverpool"></a>
+					
+						</div>
+						<div id="team_name">
+							<p id="Southampton">Southampton</p>
+							<p id="away_liverpool">Liverpool</p>
+						</div>
+						<div>
+							<button id="win_button" onclick="chooseHome()">Home</button>
+							<button id="draw_button" onclick="chooseSame()">Same</button>
+							<button id="loss_button" onclick="chooseAway()">Away</button>
+						</div>
+						<div class="odds">
+							<p class = "spec_odds_home"></p>
+							<p class = "spec_odds_draw"></p>
+							<p class = "spec_odds_away"></p>
+						</div>
+						<div id="betting_amount">
+							<form action="" method="post">
+								<label class="label_type" class="label_type" for="amount">Amount</label>
+								<Input type="number" class="AmountControl" id="Amount_for_Corner_Southampton" name="betting_amount"><br>
+								<button id="submit_button" type="button" value="button" onclick="submitCorner_Southampton()">Submit</button>
+								<button id="reset_button" type="reset" value="Reset">Reset</button>
+							</form>
+							<!--<input type="submit" id="submit_icon" value="Submit">-->
+						</div>
 					</div>
 
 					<h5 class="mt-5 mb-3">Table Example:</h5>
