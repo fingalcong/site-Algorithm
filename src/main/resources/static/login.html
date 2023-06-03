@@ -188,8 +188,13 @@
             log_message.innerText = 'Log Out';
             login_info.innerHTML = '';
             var h3 = document.createElement('h3');
-            h3.innerText = 'You have already logged in. Return to home page in 3 seconds.';
+            h3.innerText = 'Return to home page automatically in 3 seconds.';
             login_info.append(h3);
+            var r = confirm("Are you sure to log out?");
+            if(r == true){
+                document.cookie = "authorization=success; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+                alert("you have successfully log out");
+            }
             tiaotrigger();
         }
     </script>

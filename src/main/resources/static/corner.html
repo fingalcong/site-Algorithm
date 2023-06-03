@@ -659,6 +659,10 @@
 		xhr.open("GET", url, true);
 		xhr.setRequestHeader('Authorization', 'Bearer ' + jwtoken[1]);
 		xhr.send();
+		if(result[1] == 'success'){
+        	var log_message = document.getElementById('login-page');
+            log_message.innerText = 'Log Out';
+        }
 	</script>
 
 </body>

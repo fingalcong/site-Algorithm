@@ -94,7 +94,7 @@
 			    <h3 id="warning-message">Please log in first to check your own purchase history. </h3>
 			    <!--<figure><img class="img-fluid" src="images/soccer betting_image.jpg" alt="image"></figure>-->
 			    <h5 class="mt-5">Purchase History Table</h5>
-				<h6 id="username-purchase">Alex</h6>
+				<h6 id="username-purchase">Username:</h6>
 				<div>
 					<table class="table table-striped my-5" id="purchase-table">
 						<thead>
@@ -218,7 +218,12 @@
 		xhr.setRequestHeader('Authorization', 'Bearer ' + jwtoken[1]);
 		//xhr.setRequestHeader("Content-Type", "application/json");
 		xhr.send();
-	</script> 
+
+		if(result[1] == 'success'){
+        	var log_message = document.getElementById('login-page');
+            log_message.innerText = 'Log Out';
+        }
+	</script>
 
 </body>
 </html> 

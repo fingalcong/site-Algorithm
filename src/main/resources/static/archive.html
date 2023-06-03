@@ -134,9 +134,9 @@
 				    <div class="media">
 					    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="images/thumbs/5.jpg" alt="image">
 					    <div class="media-body">
-						    <h3 class="title mb-1"><a href="post.html">Poster for the Site</a></h3>
+						    <h3 class="title mb-1"><a href="post.html">Executive Presentation for the Site</a></h3>
 						    <div class="meta mb-1"><span class="date">Published 2 months ago</span><span class="time">10 min read</span><span class="comment"><a href="#">23 comments</a></span></div>
-						    <div class="intro">This is the poster for the site to show users about the site and the benefit of the site more straight-forward</div>
+						    <div class="intro">This is the Executive Presentation for the site to show users about the site and the benefit of the site more straight-forward</div>
 						    <a class="more-link" href="post.html">Read more &rarr;</a>
 					    </div><!--//media-body-->
 				    </div><!--//media-->
@@ -146,9 +146,9 @@
 				    <div class="media">
 					    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="images/thumbs/6.jpg" alt="image">
 					    <div class="media-body">
-						    <h3 class="title mb-1"><a href="post.html">Business Report for the Site</a></h3>
+						    <h3 class="title mb-1"><a href="post.html">Product Demo for the Site</a></h3>
 						    <div class="meta mb-1"><span class="date">Published 3 months ago</span><span class="time">2 min read</span><span class="comment"><a href="#">1 comment</a></span></div>
-						    <div class="intro">The Business Report for the site is for the analysis of the potential value for the site, and also the predicted income based on the site.</div>
+						    <div class="intro">The Product Demo for the site is for the analysis of the potential value for the site, and also the predicted income based on the site.</div>
 						    <a class="more-link" href="post.html">Read more &rarr;</a>
 					    </div><!--//media-body-->
 				    </div><!--//media-->
@@ -176,6 +176,13 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
+	<script>
+		const result = document.cookie.match(/authorization=(\w+)/);
+        if(result[1] == 'success'){
+        	var log_message = document.getElementById('login-page');
+            log_message.innerText = 'Log Out';
+        }
+	</script>
 
 </body>
 </html> 
