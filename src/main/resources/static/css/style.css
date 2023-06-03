@@ -737,12 +737,22 @@ div.comment:first-of-type {
     height: 130px; 
 }
 
+#Arsenal1{
+    width: 80px;
+    height: 96px; 
+}
+
 #Liverpool{
     margin-left: 80%;
 }
 
 #Arsenal{
     margin-left: 129.5%;
+}
+
+#Arsenal1{
+    margin-left: 400%;
+    margin-top: 15px;
 }
 
 #betting_table {
@@ -1116,6 +1126,7 @@ div.comment:first-of-type {
     padding-right: 15%;
     padding-left: 15%;
     margin-left: 250%;
+    margin-top: 10px;
 }
 
 #Leeds{
@@ -1190,10 +1201,6 @@ div.comment:first-of-type {
 
 .spec_odds_draw1{
     margin-left: 100px;
-}
-
-.spec_odds_away{
-
 }
 
 .spec_odds_home,.spec_odds_draw,.spec_odds_away, .spec_odds_draw1{
