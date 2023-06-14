@@ -161,7 +161,7 @@ h6 {
     color: rgba(0, 0, 0, 0.6)
 }
 .logo{
-    width:78px;
+    width:150px;
 }
 .social-list a {
     width: 32px;
@@ -197,11 +197,15 @@ h6 {
     padding:1em 0 !important;
 }
 .page-title .heading {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     color:white;
 }
-
+.page-title .sub-heading {
+    font-size: 1rem;
+    font-weight: bold;
+    color:white;
+}
 .footer {
     color: rgba(255, 255, 255, 0.7)
 }
